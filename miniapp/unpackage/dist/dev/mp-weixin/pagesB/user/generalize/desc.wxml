@@ -1,1 +1,0 @@
-<block wx:if="{{show}}"><view class="m-md p-md bc-fff border-radius5px data-v-83e71e3a"><rich-text nodes="{{ruleInfo}}" class="data-v-83e71e3a"></rich-text></view></block>

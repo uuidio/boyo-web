@@ -1,8 +1,0 @@
-{
-  "navigationBarTitleText": "会员资料",
-  "navigationStyle": "custom",
-  "usingComponents": {
-    "van-nav-bar": "/wxcomponents/vant/nav-bar/index",
-    "van-button": "/wxcomponents/vant/button/index"
-  }
-}

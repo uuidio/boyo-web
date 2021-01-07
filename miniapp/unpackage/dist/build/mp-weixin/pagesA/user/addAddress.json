@@ -1,8 +1,0 @@
-{
-  "navigationBarTitleText": "添加收货地址",
-  "usingComponents": {
-    "van-area": "/wxcomponents/vant/area/index",
-    "van-popup": "/wxcomponents/vant/popup/index",
-    "van-switch": "/wxcomponents/vant/switch/index"
-  }
-}

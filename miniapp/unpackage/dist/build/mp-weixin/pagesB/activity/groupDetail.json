@@ -1,8 +1,0 @@
-{
-  "navigationBarTitleText": "拼团详情",
-  "usingComponents": {
-    "uni-countdown": "/node-modules/_@dcloudio_uni-ui@1.2.5@@dcloudio/uni-ui/lib/uni-count-down/uni-count-down",
-    "tui-bottom-popup": "/components/bottom-popup/bottom-popup",
-    "tui-numberbox": "/components/numberbox/numberbox"
-  }
-}

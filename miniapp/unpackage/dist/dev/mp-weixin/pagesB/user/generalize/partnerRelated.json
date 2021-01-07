@@ -1,6 +1,0 @@
-{
-  "navigationBarTitleText": "我的关系人",
-  "usingComponents": {
-    "no-data": "/components/lists/nullData"
-  }
-}

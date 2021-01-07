@@ -1,8 +1,0 @@
-{
-  "navigationBarTitleText": "付款",
-  "navigationBarBackgroundColor": "#D23737",
-  "navigationBarTextStyle": "white",
-  "usingComponents": {
-    "van-popup": "/wxcomponents/vant/popup/index"
-  }
-}

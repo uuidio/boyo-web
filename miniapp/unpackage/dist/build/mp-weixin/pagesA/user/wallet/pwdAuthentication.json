@@ -1,7 +1,0 @@
-{
-  "navigationBarTitleText": "",
-  "usingComponents": {
-    "van-popup": "/wxcomponents/vant/popup/index",
-    "valid-code": "/pagesA/components/validCode"
-  }
-}

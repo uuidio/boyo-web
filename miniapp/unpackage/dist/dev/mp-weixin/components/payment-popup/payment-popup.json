@@ -1,7 +1,0 @@
-{
-  "component": true,
-  "usingComponents": {
-    "vant-popup": "/wxcomponents/vant/popup/index",
-    "valid-code": "/components/validCode/validCode"
-  }
-}

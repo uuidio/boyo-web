@@ -1,7 +1,0 @@
-{
-  "navigationBarTitleText": "注册",
-  "navigationStyle": "custom",
-  "usingComponents": {
-    "to-home": "/components/header/ToHome"
-  }
-}

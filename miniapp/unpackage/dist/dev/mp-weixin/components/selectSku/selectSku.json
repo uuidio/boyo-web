@@ -1,7 +1,0 @@
-{
-  "component": true,
-  "usingComponents": {
-    "tui-bottom-popup": "/components/bottom-popup/bottom-popup",
-    "tui-numberbox": "/components/numberbox/numberbox"
-  }
-}

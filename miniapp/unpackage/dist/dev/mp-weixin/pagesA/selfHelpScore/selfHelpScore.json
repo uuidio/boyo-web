@@ -1,6 +1,0 @@
-{
-  "navigationBarTitleText": "自助积分",
-  "usingComponents": {
-    "van-icon": "/wxcomponents/vant/icon/index"
-  }
-}

@@ -1,6 +1,0 @@
-{
-  "navigationBarTitleText": "实体卡详情",
-  "usingComponents": {
-    "van-popup": "/wxcomponents/vant/popup/index"
-  }
-}

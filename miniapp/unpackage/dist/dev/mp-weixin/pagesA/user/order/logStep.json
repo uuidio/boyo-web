@@ -1,6 +1,0 @@
-{
-  "navigationBarTitleText": "物流跟踪",
-  "usingComponents": {
-    "van-steps": "/wxcomponents/vant/steps/index"
-  }
-}
