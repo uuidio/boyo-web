@@ -1,0 +1,22 @@
+import QS from "qs";
+import Server from "../config/server.js";
+
+export default {
+  baseURL: Server.baseURL,
+  method: "GET",
+  headers: {
+    Accept: "application/json"
+  },
+  params: {},
+  timeout: 10000,
+  withCredentials: false,
+  responseType: "json",
+  maxContentLength: 2000,
+  validateStatus: function(status) {
+    return status >= 200 && status < 500;
+  },
+  maxRedirects: 5,
+  transformRequest: [data => QS.stringify(data)],
+  paramsSerializer: params => QS.stringify(params),
+  data: {}
+};

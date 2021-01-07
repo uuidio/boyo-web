@@ -1,0 +1,27 @@
+.goods-list.data-v-c0623ac8 {
+  padding: 20rpx;
+  overflow: hidden;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.goods-list .goods-item.data-v-c0623ac8 {
+  width: 49%;
+  margin-bottom: 20rpx;
+}
+.goods-item image.data-v-c0623ac8 {
+  width: 100%;
+  height: 325rpx;
+}
+.goods-item .line2-p.data-v-c0623ac8 {
+  height: 62rpx;
+  margin-bottom: 30rpx;
+  font-size: 24rpx;
+}
+.goods-item .p-box.data-v-c0623ac8 {
+  margin-bottom: 20rpx;
+}
+.goods-item .btn.data-v-c0623ac8 {
+  padding: 10rpx;
+}
+

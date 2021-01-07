@@ -1,0 +1,15 @@
+.billItem.data-v-355f8231 {
+  height: 80rpx;
+}
+.submit-btn.data-v-355f8231 {
+  height: 90rpx;
+  line-height: 90rpx;
+  background: #e64340;
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+

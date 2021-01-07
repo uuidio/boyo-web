@@ -1,0 +1,78 @@
+.order-info.data-v-3e46d80d {
+  background: #fff;
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+.order-info .order-goods.data-v-3e46d80d {
+  padding: 20rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.order-info .order-goods .imgBox.data-v-3e46d80d {
+  width: 160rpx;
+  margin-right: 20rpx;
+}
+.order-info .order-goods .imgBox image.data-v-3e46d80d {
+  border-radius: 10rpx;
+  width: 100%;
+}
+.order-info .order-goods .order-goods-text.data-v-3e46d80d {
+  padding: 10rpx 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.order-info .order-goods .order-goods-text .order-goods-tit.data-v-3e46d80d {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.data-v-3e46d80d .van-popup {
+  padding: 30rpx 30rpx 90rpx;
+  hegiht: 800rpx;
+}
+.title.data-v-3e46d80d {
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.radioBox.data-v-3e46d80d {
+  height: calc(800rpx - 180rpx);
+  overflow: scroll;
+}
+.radioBox.data-v-3e46d80d::-webkit-scrollbar {
+  display: none;
+}
+.cancel-button.data-v-3e46d80d {
+  height: 90rpx;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.cancel-button .btn.data-v-3e46d80d {
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  color: #fff;
+}
+.cancel-button .btn1.data-v-3e46d80d {
+  background: #e64340;
+}
+.saleBtn.data-v-3e46d80d {
+  width: 100%;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #e64340;
+}
+

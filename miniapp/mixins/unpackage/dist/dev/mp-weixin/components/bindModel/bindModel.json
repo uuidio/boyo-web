@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "em-model": "/components/modal/modal",
+    "em-button": "/components/button/button"
+  },
+  "component": true
+}

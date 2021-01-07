@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "环游商城",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "coupon-goods": "/components/lists/CouponGoods",
+    "theme-one": "/components/recommend/ThemeOne",
+    "brands": "/pages/index/components/brands",
+    "hot-class": "/pages/index/components/hotClass",
+    "hot-goods": "/pages/index/components/hotGoods",
+    "goods-swiper": "/pages/index/components/goodsSwiper"
+  }
+}

@@ -1,0 +1,23 @@
+.coupon-wrap.data-v-4c5633da {
+  padding: 20rpx;
+  padding-bottom: 80rpx;
+}
+.tab-box.data-v-4c5633da {
+  background: #fff;
+}
+.tab-box .fx1.data-v-4c5633da {
+  text-align: center;
+  height: 70rpx;
+  line-height: 70rpx;
+}
+.tab-box .fx1.active.data-v-4c5633da {
+  color: #e64340;
+}
+.btn-box button.data-v-4c5633da {
+  border-radius: 0;
+  padding: 20rpx;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+

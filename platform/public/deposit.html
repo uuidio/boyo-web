@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>申请提现</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.4.0.js"></script>
+<script type="text/javascript" src="https://js.cdn.aliyun.dcloud.net.cn/dev/uni-app/uni.webview.1.5.2.js"></script>
+<script>
+
+  function getUrlParam(name) {
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+    var r = window.location.search.substr(1).match(reg); //匹配目标参数
+    if (r != null) return unescape(r[2]); return null; //返回参数值
+  }
+  let u = getUrlParam('u')
+  let open_id = getUrlParam('openid')
+  if(!open_id){
+    window.location.href = 'https://egotest.ytholidayplaza.com/shop/v1/code?url=https://egotest.ytholidayplaza.com/admin/platform/deposit&u='+u+'';//测试
+    // window.location.href = 'https://bbc-api.gdalpha.com/shop/v1/code?url=https://bbc-fe.gdalpha.com/platform/deposit&u='+u+'';//正式
+  }else{
+    uni.redirectTo({
+      url: '/pagesB/user/generalize/deposit'
+    });
+  }
+</script>
+</html>

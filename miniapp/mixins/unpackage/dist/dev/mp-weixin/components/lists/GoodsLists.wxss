@@ -1,0 +1,171 @@
+.cols_one.data-v-653c440d {
+  position: relative;
+}
+.cols_one .goods-item.data-v-653c440d {
+  background: #fff;
+  padding: 20rpx;
+  margin: 0 20rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.cols_one .goods-item.data-v-653c440d:not(:last-child) {
+  border-bottom: 1px solid #f8f8f8;
+}
+.cols_one .goods-item .image.data-v-653c440d {
+  width: 38%;
+  margin-right: 2%;
+}
+.cols_one .goods-item .image image.data-v-653c440d {
+  width: 100%;
+  border-radius: 3px;
+  will-change: transform;
+}
+.cols_one .goods-item .content.data-v-653c440d {
+  width: 60%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.cols_one .goods-item .content .title.data-v-653c440d {
+  color: #333;
+  font-weight: 400;
+  font-size: 28rpx;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin-bottom: 20rpx;
+  overflow: hidden;
+  height: 75rpx;
+}
+.cols_one .goods-item .content .num.data-v-653c440d {
+  color: #aaa;
+  line-height: 40rpx;
+  font-size: 24rpx;
+}
+.cols_one .goods-item .content .num .sold.data-v-653c440d {
+  font-size: 24rpx;
+}
+.cols_one .goods-item .content .money.data-v-653c440d {
+  height: 48rpx;
+  font-size: $font-md;
+  margin-top: 40rpx;
+}
+.cols_one .goods-item .content .money .price.data-v-653c440d {
+  color: #fc4d52;
+  font-size: 34rpx;
+  font-weight: bold;
+}
+.cols_one .goods-item .content .money .market-price.data-v-653c440d {
+  font-size: 24rpx;
+  color: #a0a0a0;
+  text-decoration: line-through;
+  padding-left: 12rpx;
+}
+.cols_two.data-v-653c440d {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  padding: 0 20rpx;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.cols_two .goods-item.data-v-653c440d {
+  background: #fff;
+  padding: 20rpx;
+  margin: 0;
+  display: block;
+  width: 49%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: none;
+  margin-bottom: 20rpx;
+}
+.cols_two .goods-item.data-v-653c440d:nth-child(2n) {
+  margin-left: 2%;
+}
+.cols_two .goods-item .image.data-v-653c440d {
+  width: 100%;
+  margin-right: 0%;
+}
+.cols_two .goods-item .image image.data-v-653c440d {
+  width: 100%;
+  border-radius: 0;
+}
+.cols_two .goods-item .content.data-v-653c440d {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.cols_two .goods-item .content .title.data-v-653c440d {
+  color: #333;
+  font-weight: 400;
+  font-size: 28rpx;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin-bottom: 0;
+  overflow: hidden;
+  height: 75rpx;
+}
+.cols_two .goods-item .content .num.data-v-653c440d {
+  color: #aaa;
+  line-height: 40rpx;
+  font-size: 24rpx;
+}
+.cols_two .goods-item .content .num .sold.data-v-653c440d {
+  font-size: 24rpx;
+}
+.cols_two .goods-item .content .money.data-v-653c440d {
+  height: 48rpx;
+  font-size: $font-md;
+  margin-top: 10rpx;
+}
+.cols_two .goods-item .content .money .price.data-v-653c440d {
+  color: #fc4d52;
+  font-size: 34rpx;
+  font-weight: bold;
+}
+.cols_two .goods-item .content .money .market-price.data-v-653c440d {
+  font-size: 24rpx;
+  color: #a0a0a0;
+  text-decoration: line-through;
+  padding-left: 12rpx;
+}
+

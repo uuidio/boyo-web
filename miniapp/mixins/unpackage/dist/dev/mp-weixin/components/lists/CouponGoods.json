@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "tag-coupon": "/components/tag/coupon"
+  },
+  "component": true
+}

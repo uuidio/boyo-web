@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "订单评价",
+  "onReachBottomDistance": 50,
+  "usingComponents": {
+    "van-radio": "/wxcomponents/vant/radio/index",
+    "van-radio-group": "/wxcomponents/vant/radio-group/index",
+    "van-checkbox": "/wxcomponents/vant/checkbox/index",
+    "tui-rate": "/components/rate/rate",
+    "upload-img": "/components/uploadImg/uploadImg"
+  }
+}

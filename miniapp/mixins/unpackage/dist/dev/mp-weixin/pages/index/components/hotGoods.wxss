@@ -1,0 +1,12 @@
+.add-img.data-v-01077a95 {
+  display: block;
+  width: 100%;
+}
+.add-img image.data-v-01077a95 {
+  width: 100%;
+  display: block;
+}
+.goods-box.data-v-01077a95 {
+  margin: 40rpx 0;
+}
+

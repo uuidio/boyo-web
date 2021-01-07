@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "品牌",
+  "usingComponents": {
+    "brand-info": "/pages/brand/components/brandInfo",
+    "top-dropdown": "/components/lists/TopDropdown",
+    "uni-load-more": "/node-modules/@dcloudio/uni-ui/lib/uni-load-more/uni-load-more"
+  }
+}

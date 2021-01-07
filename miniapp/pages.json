@@ -1,0 +1,1056 @@
+{
+  //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+  "pages": [{
+      "path": "pages/index/indexCustomer",
+      "style": {
+        // #ifdef MP
+        "navigationBarTitleText": "极汇Go",
+        "navigationStyle": "custom",
+        // #endif
+
+        "app-plus": {
+          "titleNView": {
+            "type": "transparent",
+            "searchInput": {
+              "backgroundColor": "rgba(231, 231, 231,.7)",
+              "borderRadius": "16px",
+              "placeholder": "请输入关键词",
+              "disabled": true,
+              "placeholderColor": "#606266"
+            },
+            "buttons": [{
+                "fontSrc": "/static/icon/iconfont/iconfont.ttf",
+                "text": "\ue689",
+                "fontSize": "26",
+                "color": "#303133",
+                "float": "left",
+                "background": "rgba(0,0,0,0)"
+              },
+              {
+                "fontSrc": "/static/icon/iconfont/iconfont.ttf",
+                "text": "\ue667",
+                "fontSize": "27",
+                "color": "#303133",
+                "background": "rgba(0,0,0,0)",
+                "redDot": true
+              }
+            ]
+          }
+        },
+        "usingComponents": {
+          "van-icon": "/wxcomponents/vant/icon/index",
+          "van-action-sheet": "/wxcomponents/vant/action-sheet/index",
+          "van-popup": "/wxcomponents/vant/popup/index"
+        }
+      }
+    },
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "极汇Go",
+        "navigationStyle": "custom",
+        "usingComponents": {
+          "van-action-sheet": "/wxcomponents/vant/action-sheet/index"
+        },
+        "app-plus": {
+          "titleNView": {
+            "type": "transparent",
+            "searchInput": {
+              "backgroundColor": "rgba(231, 231, 231,.7)",
+              "borderRadius": "16px",
+              "placeholder": "请输入关键词",
+              "disabled": true,
+              "placeholderColor": "#606266"
+            },
+            "buttons": [{
+              "fontSrc": "/static/icon/iconfont/iconfont.ttf",
+              "text": "\ue689",
+              "fontSize": "26",
+              "color": "#303133",
+              "float": "left",
+              "background": "rgba(0,0,0,0)"
+            },
+              {
+                "fontSrc": "/static/icon/iconfont/iconfont.ttf",
+                "text": "\ue667",
+                "fontSize": "27",
+                "color": "#303133",
+                "background": "rgba(0,0,0,0)",
+                "redDot": true
+              }
+            ]
+          }
+        }
+      }
+    },
+
+    {
+      "path": "pages/selfEdit/selfEdit",
+      "style": {
+        "navigationBarTitleText": "甄选",
+        "navigationStyle": "custom",
+        "app-plus": {
+          "titleNView": {
+            "type": "transparent",
+            "searchInput": {
+              "backgroundColor": "rgba(231, 231, 231,.7)",
+              "borderRadius": "16px",
+              "placeholder": "请输入关键词",
+              "disabled": true,
+              "placeholderColor": "#606266"
+            },
+            "buttons": [{
+                "fontSrc": "/static/icon/iconfont/iconfont.ttf",
+                "text": "\ue689",
+                "fontSize": "26",
+                "color": "#303133",
+                "float": "left",
+                "background": "rgba(0,0,0,0)"
+              },
+              {
+                "fontSrc": "/static/icon/iconfont/iconfont.ttf",
+                "text": "\ue667",
+                "fontSize": "27",
+                "color": "#303133",
+                "background": "rgba(0,0,0,0)",
+                "redDot": true
+              }
+            ]
+          }
+        },
+        "usingComponents": {
+          "van-icon": "/wxcomponents/vant/icon/index",
+          "van-action-sheet": "/wxcomponents/vant/action-sheet/index"
+        }
+      }
+    },
+    {
+      "path": "pages/goods/class",
+      "style": {
+        "navigationBarTitleText": "分类",
+        "navigationStyle": "custom",
+        "disableScroll": true
+      }
+    },
+    {
+      "path": "pages/goods/platformClass",
+      "style": {
+        "navigationBarTitleText": "平台分类",
+        "navigationStyle": "custom",
+        "usingComponents": {
+          "van-stepper": "/wxcomponents/vant/stepper/index"
+        }
+      }
+    },
+    {
+      "path": "pages/user/index",
+      "style": {
+        "navigationBarTitleText": "我的",
+        "navigationStyle": "custom",
+        "app-plus": {
+          "bounce": "none"
+        },
+        "usingComponents": {
+          "van-datetime-picker": "/wxcomponents/vant/datetime-picker/index",
+          "van-button": "/wxcomponents/vant/button/index",
+          "van-dialog": "/wxcomponents/vant/dialog/index",
+          "van-cell": "/wxcomponents/vant/cell/index",
+          "van-field": "/wxcomponents/vant/field/index",
+          "van-popup": "/wxcomponents/vant/popup/index",
+          "van-radio": "/wxcomponents/vant/radio/index",
+          "van-radio-group": "/wxcomponents/vant/radio-group/index",
+          "van-action-sheet": "/wxcomponents/vant/action-sheet/index"
+        }
+      }
+    },
+    {
+      "path": "pages/cart/cart",
+      "style": {
+        "navigationBarTitleText": "购物车",
+        "navigationStyle": "custom",
+        "usingComponents": {
+          "van-stepper": "/wxcomponents/vant/stepper/index",
+          "van-button": "/wxcomponents/vant/button/index",
+          "van-checkbox": "/wxcomponents/vant/checkbox/index",
+          "van-submit-bar": "/wxcomponents/vant/submit-bar/index",
+          "van-checkbox-group": "/wxcomponents/vant/checkbox-group/index"
+        }
+      }
+    }
+  ],
+  "subPackages": [{
+    "root": "pagesA",
+    "pages": [{
+        "path": "checkout/index",
+        "style": {
+          "navigationBarTitleText": "确认订单",
+          "usingComponents": {
+            "van-datetime-picker": "/wxcomponents/vant/datetime-picker/index",
+            "van-button": "/wxcomponents/vant/button/index",
+            "van-dialog": "/wxcomponents/vant/dialog/index",
+            "van-cell": "/wxcomponents/vant/cell/index",
+            "van-field": "/wxcomponents/vant/field/index",
+            "van-popup": "/wxcomponents/vant/popup/index",
+            "van-radio": "/wxcomponents/vant/radio/index",
+            "van-radio-group": "/wxcomponents/vant/radio-group/index",
+            "van-action-sheet": "/wxcomponents/vant/action-sheet/index"
+          }
+        }
+      },
+      {
+        "path": "checkout/pickStore",
+        "style": {
+          "navigationBarTitleText": "门店自提",
+          "usingComponents": {
+            "van-cell": "/wxcomponents/vant/cell/index",
+            "van-cell-group": "/wxcomponents/vant/cell-group/index",
+            "van-field": "/wxcomponents/vant/field/index",
+            "van-button": "/wxcomponents/vant/button/index",
+            "van-action-sheet": "/wxcomponents/vant/action-sheet/index"
+          }
+        }
+      },
+      {
+        "path": "checkout/checkoutAdd",
+        "style": {
+          "navigationBarTitleText": "收货地址",
+          "usingComponents": {
+            "van-radio": "/wxcomponents/vant/radio/index",
+            "van-radio-group": "/wxcomponents/vant/radio-group/index"
+          }
+        }
+      },
+      {
+        "path": "checkout/addCheckoutAdd",
+        "style": {
+          "navigationBarTitleText": "新增收货地址",
+          "usingComponents": {
+            "van-area": "/wxcomponents/vant/area/index",
+            "van-popup": "/wxcomponents/vant/popup/index",
+            "van-switch": "/wxcomponents/vant/switch/index"
+          }
+        }
+      },
+      {
+        "path": "checkout/status",
+        "style": {
+          "navigationBarTitleText": "支付结果",
+          "usingComponents": {
+            "van-icon": "/wxcomponents/vant/icon/index"
+          }
+        }
+      },
+      {
+        "path": "checkout/groupStatus",
+        "style": {
+          "navigationBarTitleText": "拼团支付结果",
+          "usingComponents": {}
+        }
+	  },
+      {
+        "path": "article/articleList",
+        "style": {
+          "navigationBarTitleText": "文章列表"
+        }
+      },
+      {
+        "path": "article/articleDetail",
+        "style": {
+          "navigationBarTitleText": "文章详情"
+        }
+      },
+      {
+        "path": "brand/brand",
+        "style": {
+          "navigationBarTitleText": "品牌"
+        }
+      },
+      {
+        "path": "brand/lists",
+        "style": {
+          "navigationBarTitleText": "品牌列表",
+          "navigationStyle": "custom"
+        }
+      },
+      {
+        "path": "selfHelpScore/ticketRecord",
+        "style": {
+          "navigationBarTitleText": "小票记录",
+          "usingComponents": {
+            "van-icon": "/wxcomponents/vant/icon/index"
+          }
+        }
+      },
+      {
+        "path": "selfHelpScore/selfHelpScore",
+        "style": {
+          "navigationBarTitleText": "自助积分",
+          "usingComponents": {
+            "van-icon": "/wxcomponents/vant/icon/index"
+          }
+        }
+      },
+      {
+        "path": "goods/detail",
+        "style": {
+          "navigationBarTitleText": "商品详情",
+          "navigationBarBackgroundColor": "#ffffff",
+          "navigationBarTextStyle": "black",
+          "backgroundColorTop": "#f8f8f8",
+          "backgroundColorBottom": "#f8f8f8",
+          "navigationStyle": "custom",
+          "app-plus": {
+            "titleNView": false
+          },
+          "usingComponents": {
+            "van-popup": "/wxcomponents/vant/popup/index"
+          }
+        }
+      },
+      {
+        "path": "goods/rate",
+        "style": {
+          "navigationBarTitleText": "商品评价",
+          "usingComponents": {},
+          "onReachBottomDistance": 50
+        }
+      },
+      {
+        "path": "goods/search",
+        "style": {
+          "navigationBarTitleText": "搜索"
+        }
+      },
+      {
+        "path": "goods/lists",
+        "style": {
+          "navigationBarBackgroundColor": "#ffffff",
+          "navigationBarTextStyle": "black",
+          "backgroundColorTop": "#f8f8f8",
+          "backgroundColorBottom": "#f8f8f8",
+          "navigationBarTitleText": "商品列表 ",
+          "onReachBottomDistance": 50,
+          "navigationStyle": "custom",
+          "enablePullDownRefresh": false,
+          "app-plus": {
+            "titleNView": false
+          }
+        }
+      },
+	  {
+	    "path": "user/login/agreement",
+	    "style": {
+	      "navigationBarTitleText": "极汇Go用户注册协议",
+	      "usingComponents": {}
+	    }
+	  },
+      {
+        "path": "user/setting/setting",
+        "style": {
+          "navigationBarTitleText": "设置",
+          "usingComponents": {}
+        }
+      },
+      {
+        "path": "user/setting/userinfoSetting",
+        "style": {
+          "navigationBarTitleText": "会员资料",
+          "navigationStyle": "custom",
+          "usingComponents": {
+            "van-nav-bar": "/wxcomponents/vant/nav-bar/index",
+            "van-button": "/wxcomponents/vant/button/index"
+          }
+        }
+      },
+      {
+        "path": "user/setting/setValue",
+        "style": {
+          "navigationBarTitleText": "设置昵称",
+          "usingComponents": {}
+        }
+      },
+      {
+        "path": "user/address",
+        "style": {
+          "navigationBarTitleText": "收货地址",
+          "usingComponents": {}
+        }
+      },
+      {
+        "path": "user/addAddress",
+        "style": {
+          "navigationBarTitleText": "添加收货地址",
+          "usingComponents": {
+            "van-area": "/wxcomponents/vant/area/index",
+            "van-popup": "/wxcomponents/vant/popup/index",
+            "van-switch": "/wxcomponents/vant/switch/index"
+          }
+        }
+      },
+      {
+        "path": "user/favorite",
+        "style": {
+          "navigationBarTitleText": "我的收藏",
+          "usingComponents": {}
+        }
+      },
+      {
+        "path": "user/memberCard",
+        "style": {
+          "navigationBarTitleText": "会员卡",
+          "usingComponents": {}
+        }
+      },
+      {
+        "path": "user/point",
+        "style": {
+          "navigationBarTitleText": "我的积分",
+          "usingComponents": {
+            "van-popup": "/wxcomponents/vant/popup/index"
+          }
+        }
+      },
+      {
+        "path": "user/pointDetail",
+        "style": {
+          "navigationBarTitleText": "积分明细",
+          "usingComponents": {
+          }
+        }
+      },
+      {
+        "path": "user/coupon",
+        "style": {
+          "navigationBarTitleText": "我的优惠券",
+          "usingComponents": {}
+        }
+      },
+      {
+        "path": "user/couponDetail",
+        "style": {
+          "navigationBarTitleText": "优惠券详情",
+          "usingComponents": {}
+        }
+      },
+      {
+        "path": "user/order/refundDetail",
+        "style": {
+          "navigationBarTitleText": "售后详情",
+          "usingComponents": {}
+        }
+      },
+      {
+        "path": "user/order/waybill",
+        "style": {
+          "navigationBarTitleText": "填写运单号",
+          "usingComponents": {
+            "van-action-sheet": "/wxcomponents/vant/action-sheet/index"
+          }
+        }
+      },
+      {
+        "path": "user/order/detail",
+        "style": {
+          "navigationBarTitleText": "订单详情",
+          "usingComponents": {
+            "van-popup": "/wxcomponents/vant/popup/index",
+            "van-radio": "/wxcomponents/vant/radio/index",
+            "van-radio-group": "/wxcomponents/vant/radio-group/index",
+            "van-icon": "/wxcomponents/vant/icon/index"
+          }
+        }
+      },
+      {
+        "path": "user/order/saleType",
+        "style": {
+          "navigationBarTitleText": "选择售后类型",
+          "usingComponents": {},
+          "onReachBottomDistance": 50
+        }
+      },
+      {
+        "path": "user/order/saleDetail",
+        "style": {
+          "navigationBarTitleText": "售后详情",
+          "usingComponents": {
+            "van-popup": "/wxcomponents/vant/popup/index",
+            "van-radio": "/wxcomponents/vant/radio/index",
+            "van-radio-group": "/wxcomponents/vant/radio-group/index"
+          },
+          "onReachBottomDistance": 50
+        }
+      },
+      {
+        "path": "user/order/lists",
+        "style": {
+          "navigationBarTitleText": "订单列表",
+          "usingComponents": {
+            "van-tab": "/wxcomponents/vant/tab/index",
+            "van-tabs": "/wxcomponents/vant/tabs/index",
+            "van-button": "/wxcomponents/vant/button/index",
+            "van-popup": "/wxcomponents/vant/popup/index",
+            "van-radio": "/wxcomponents/vant/radio/index",
+            "van-radio-group": "/wxcomponents/vant/radio-group/index"
+          },
+          "onReachBottomDistance": 50
+        }
+      },
+      {
+        "path": "user/order/aftersalesLists",
+        "style": {
+          "navigationBarTitleText": "售后列表",
+          "usingComponents": {},
+          "onReachBottomDistance": 50
+        }
+      },
+      {
+        "path": "user/order/evaluate",
+        "style": {
+          "navigationBarTitleText": "订单评价",
+          "usingComponents": {
+            "van-radio": "/wxcomponents/vant/radio/index",
+            "van-radio-group": "/wxcomponents/vant/radio-group/index",
+            "van-checkbox": "/wxcomponents/vant/checkbox/index"
+          },
+          "onReachBottomDistance": 50
+        }
+      },
+      {
+        "path": "user/order/logStep",
+        "style": {
+          "navigationBarTitleText": "物流跟踪",
+          "usingComponents": {
+            "van-steps": "/wxcomponents/vant/steps/index"
+          }
+        }
+      },
+      {
+        "path": "user/login/login",
+        "style": {
+          "navigationBarTitleText": "注册",
+          "usingComponents": {},
+          "navigationStyle": "custom"
+        }
+      },
+      {
+        "path": "user/bindUser",
+        "style": {
+          "navigationBarTitleText": "登录"
+        }
+      },
+      {
+        "path": "index/groupProject",
+        "style": {
+          "navigationBarTitleText": "切换店铺",
+          "navigationStyle": "custom",
+          "usingComponents": {}
+        }
+      },
+      {
+        "path": "user/wallet/setPassword",
+        "style": {
+          "navigationBarTitleText": "设置支付密码",
+          "usingComponents": {
+            "van-button": "/wxcomponents/vant/button/index"
+          }
+        }
+      },
+      {
+        "path": "user/wallet/status",
+        "style": {
+          "navigationBarTitleText": "",
+          "usingComponents": {
+          }
+        }
+      },
+      {
+        "path": "user/wallet/index",
+        "style": {
+          "navigationBarTitleText": "钱包",
+          "navigationStyle": "custom",
+          "app-plus": {
+            "bounce": "none"
+          }
+        }
+      },
+      {
+        "path": "user/wallet/authentication",
+        "style": {
+          "navigationBarTitleText": "验证身份",
+          "app-plus": {
+            "bounce": "none"
+          }
+        }
+      },
+      {
+        "path": "user/wallet/payment",
+        "style": {
+          "navigationBarTitleText": "付款",
+          "navigationBarBackgroundColor": "#D23737",
+          "navigationBarTextStyle": "white",
+          "app-plus": {
+            "bounce": "none"
+          },
+          "usingComponents": {
+            "van-popup": "/wxcomponents/vant/popup/index"
+          }
+        }
+      },
+      {
+        "path": "user/wallet/pwdAuthentication",
+        "style": {
+          "navigationBarTitleText": "",
+          "usingComponents": {
+            "van-popup": "/wxcomponents/vant/popup/index"
+          }
+        }
+      },
+      {
+        "path": "user/wallet/transactionList",
+        "style": {
+          "navigationBarTitleText": "交易明细",
+          "usingComponents": {
+          }
+        }
+      },
+      {
+        "path": "user/wallet/transactionDetail",
+        "style": {
+          "navigationBarTitleText": "消费明细",
+          "usingComponents": {
+          }
+        }
+      },
+      {
+        "path": "user/wallet/bindingCard",
+        "style": {
+          "navigationBarTitleText": "绑定实体卡",
+          "usingComponents": {
+          }
+        }
+      },
+      {
+        "path": "user/wallet/physicalCard",
+        "style": {
+          "navigationBarTitleText": "我的实体卡",
+          "usingComponents": {
+          }
+        }
+      },
+      {
+        "path": "user/wallet/physicalCardDetail",
+        "style": {
+          "navigationBarTitleText": "实体卡详情",
+          "usingComponents": {
+            "van-popup": "/wxcomponents/vant/popup/index"
+          }
+        }
+      },
+      {
+        "path": "user/wallet/giftCard",
+        "style": {
+          "navigationBarTitleText": "我的礼品卡",
+          "usingComponents": {
+          }
+        }
+      },
+      {
+        "path": "user/wallet/giftCardDetail",
+        "style": {
+          "navigationBarTitleText": "礼品卡详情",
+          "usingComponents": {
+          }
+        }
+      },
+      {
+        "path": "user/wallet/transfer",
+        "style": {
+          "navigationBarTitleText": "转赠留言",
+          "usingComponents": {
+          }
+        }
+      },
+      {
+        "path": "user/wallet/recharge",
+        "style": {
+          "navigationBarTitleText": "钱包充值",
+          "usingComponents": {
+          }
+        }
+      },
+      {
+        "path": "user/wallet/cardAgreement",
+        "style": {
+          "navigationBarTitleText": "实体卡使用协议",
+          "usingComponents": {
+          }
+        }
+      }
+    ]
+  }, {
+    "root": "pagesB",
+    "pages": [{
+        "path": "shop/index",
+        "style": {
+          "navigationBarTitleText": "店铺",
+          "usingComponents": {
+            "van-search": "/wxcomponents/vant/search/index",
+            "van-icon": "/wxcomponents/vant/icon/index"
+          },
+          "onReachBottomDistance": 50
+        }
+      },
+      {
+        "path": "goods/goodsCode",
+        "style": {
+          "navigationBarTitleText": "商品二维码",
+          "usingComponents": {
+            "painter": "../static/painter/painter"
+          }
+        }
+      },
+      {
+        "path": "activity/activityDetail",
+        "style": {
+          "navigationBarTitleText": "活动详情",
+          "usingComponents": {
+          }
+        }
+      },
+      {
+        "path": "activity/seckill",
+        "style": {
+          "navigationStyle": "custom",
+          "navigationBarTitleText": "秒杀活动",
+          "enablePullDownRefresh": true,
+          "usingComponents": {}
+        }
+      },
+      {
+        "path": "activity/seckillDetail",
+        "style": {
+          "navigationBarTitleText": "秒杀商品详情",
+          "navigationBarBackgroundColor": "#ffffff",
+          "navigationBarTextStyle": "black",
+          "backgroundColorTop": "#f8f8f8",
+          "backgroundColorBottom": "#f8f8f8",
+          "navigationStyle": "custom",
+          "app-plus": {
+            "titleNView": false
+          },
+          "usingComponents": {
+            "van-popup": "/wxcomponents/vant/popup/index"
+          }
+        }
+      },
+      {
+        "path": "activity/group",
+        "style": {
+          "navigationBarTitleText": "拼团活动",
+          "usingComponents": {}
+        }
+      },
+      {
+        "path": "activity/groupDetail",
+        "style": {
+          "navigationBarTitleText": "拼团详情",
+          "usingComponents": {}
+        }
+	  },
+
+      {
+        "path": "activity/integral",
+        "style": {
+          "navigationBarTitleText": "积分中心",
+          "usingComponents": {}
+        }
+      },
+      {
+        "path": "activity/cattleCoinStore",
+        "style": {
+          "navigationBarTitleText": "牛币商城",
+          "usingComponents": {}
+        }
+      },
+      {
+        "path": "activity/exchangeRecord",
+        "style": {
+          "navigationBarTitleText": "兑换记录",
+          "usingComponents": {}
+        }
+      },
+      {
+        "path": "activity/coinExchange",
+        "style": {
+          "navigationBarTitleText": "我的积分",
+          "usingComponents": {
+            "van-popup": "/wxcomponents/vant/popup/index"
+          }
+        }
+      },
+      {
+        "path": "activity/couponList",
+        "style": {
+          "navigationBarTitleText": "领券中心",
+          "usingComponents": {}
+        }
+      },
+      {
+        "path": "activity/customActivity",
+        "style": {
+          "navigationBarTitleText": "自定义活动",
+          "usingComponents": {}
+        }
+      },
+      {
+        "path": "activity/draw",
+        "style": {
+          "navigationBarTitleText": "积分转盘",
+          "usingComponents": {}
+        }
+      },
+      {
+        "path": "activity/prizeLists",
+        "style": {
+          "navigationBarTitleText": "抽奖记录",
+          "usingComponents": {}
+        }
+      },
+      {
+        "path": "prize/lists",
+        "style": {
+          "navigationBarTitleText": "我的奖品"
+        }
+      },
+      {
+        "path": "prize/detail",
+        "style": {
+          "navigationBarTitleText": "奖品详情"
+        }
+      },
+      {
+        "path": "user/generalize/index",
+        "style": {
+          "navigationBarTitleText": "推广中心",
+          "usingComponents": {
+            "van-popup": "/wxcomponents/vant/popup/index"
+          }
+        }
+      },
+      {
+        "path": "user/generalize/applyForm",
+        "style": {
+          "navigationBarTitleText": "推广员申请",
+          "usingComponents": {
+          }
+        }
+      },
+      {
+        "path": "user/generalize/promoterApply",
+        "style": {
+          "navigationBarTitleText": "推广员申请",
+          "usingComponents": {
+            "van-popup": "/wxcomponents/vant/popup/index"
+          }
+        }
+      },
+      {
+        "path": "user/generalize/applyPromoter",
+        "style": {
+          "navigationBarTitleText": "推广员认证与申请",
+          "usingComponents": {
+            "van-popup": "/wxcomponents/vant/popup/index"
+          }
+        }
+      },
+      {
+        "path": "user/generalize/desc",
+        "style": {
+          "navigationBarTitleText": "推广规则",
+          "usingComponents": {}
+        }
+      },
+      {
+        "path": "user/generalize/order",
+        "style": {
+          "navigationBarTitleText": "推广订单记录",
+          "usingComponents": {}
+        }
+      },
+      {
+        "path": "user/generalize/depositLists",
+        "style": {
+          "navigationBarTitleText": "提现记录",
+          "usingComponents": {}
+        }
+      },
+      {
+        "path": "user/generalize/deposit",
+        "style": {
+          "navigationBarTitleText": "申请提现",
+          "usingComponents": {}
+        }
+      },
+      {
+        "path": "user/generalize/depositSuccess",
+        "style": {
+          "navigationBarTitleText": "申请成功",
+          "usingComponents": {}
+        }
+      },
+
+      {
+        "path": "user/generalize/depositFail",
+        "style": {
+          "navigationBarTitleText": "申请失败",
+          "usingComponents": {}
+        }
+      },
+      {
+        "path": "user/generalize/partnerPoster",
+        "style": {
+          "navigationBarTitleText": "成为推广员",
+          "usingComponents": {
+          }
+        }
+      },
+      {
+        "path": "user/generalize/depositView",
+        "style": {
+          "navigationBarTitleText": "申请提现",
+          "usingComponents": {
+          }
+        }
+      },
+      {
+        "path": "user/generalize/myCode",
+        "style": {
+          "navigationBarTitleText": "我的二维码",
+          "usingComponents": {
+            "painter": "../../static/painter/painter"
+          }
+        }
+      },
+      {
+        "path": "user/generalize/privy",
+        "style": {
+          "navigationBarTitleText": "我的推广员",
+          "usingComponents": {}
+        }
+      },
+      {
+        "path": "user/generalize/client",
+        "style": {
+          "navigationBarTitleText": "我的客户",
+          "usingComponents": {}
+        }
+      },
+      {
+        "path": "user/generalize/partnerRelated",
+        "style": {
+          "navigationBarTitleText": "我的关系人",
+          "usingComponents": {}
+        }
+      },
+      {
+        "path": "user/teammate/index",
+        "style": {
+          "navigationBarTitleText": "邀请新用户"
+        }
+      },
+      {
+        "path": "activity/status",
+        "style": {
+          "navigationBarTitleText": "报名结果",
+          "usingComponents": {
+            "van-icon": "/wxcomponents/vant/icon/index"
+          }
+        }
+      },
+      {
+        "path": "activity/activityList",
+        "style": {
+          "navigationBarTitleText": "活动列表",
+          "usingComponents": {
+            "van-dropdown-menu": "/wxcomponents/vant/dropdown-menu/index",
+            "van-dropdown-item": "/wxcomponents/vant/dropdown-item/index",
+            "van-dropdown-item": "/wxcomponents/vant/transition/index"
+          }
+        }
+      },
+      {
+        "path": "activity/order/lists",
+        "style": {
+          "navigationBarTitleText": "报名列表",
+          "usingComponents": {
+            "van-tab": "/wxcomponents/vant/tab/index",
+            "van-tabs": "/wxcomponents/vant/tabs/index",
+            "van-button": "/wxcomponents/vant/button/index",
+            "van-popup": "/wxcomponents/vant/popup/index",
+            "van-radio": "/wxcomponents/vant/radio/index",
+            "van-radio-group": "/wxcomponents/vant/radio-group/index"
+          },
+          "onReachBottomDistance": 50
+        }
+      }
+    ]
+  }, {
+    "root": "pagesC",
+    "pages": [{
+      "path": "pages/home/home"
+    }],
+    "plugins": {
+      "live-player-plugin": {
+        "version": "1.2.1",
+        "provider": "wx2b03c6e691cd7370"
+      }
+    }
+  }],
+  "preloadRule": {
+    "pages/index/indexCustomer": {
+      "network": "all",
+      "packages": ["pagesA"]
+    },
+    "pages/cart/cart": {
+      "network": "all",
+      "packages": ["pagesB"]
+    }
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "极汇Go",
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#128D80",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [{
+        "pagePath": "pages/index/indexCustomer",
+        "iconPath": "static/images/tabbar/homePage_false.png",
+        "selectedIconPath": "static/images/tabbar/homePage_true.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/goods/platformClass",
+        "iconPath": "static/images/tabbar/class_false.png",
+        "selectedIconPath": "static/images/tabbar/class_true.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "iconPath": "static/images/tabbar/cart_false.png",
+        "selectedIconPath": "static/images/tabbar/cart_true.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "iconPath": "static/images/tabbar/my_false.png",
+        "selectedIconPath": "static/images/tabbar/my_true.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

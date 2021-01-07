@@ -1,0 +1,97 @@
+.coupon.data-v-81f288e2 {
+  background: -o-linear-gradient(left, #ff5e5e 0, #ff927c 100%);
+  background: -webkit-gradient(linear, right top, left top, color-stop(0, #ff5e5e), to(#ff927c));
+  background: -o-linear-gradient(right, #ff5e5e 0, #ff927c 100%);
+  background: linear-gradient(to left, #ff5e5e 0, #ff927c 100%);
+  position: relative;
+  z-index: 1;
+  zoom: 1;
+  font-style: normal;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  font-size: 28rpx;
+  padding: 16rpx 40rpx;
+  text-align: center;
+  color: #fff;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+.coupon.data-v-81f288e2:before {
+  position: absolute;
+  z-index: 1;
+  zoom: 1;
+  top: 50%;
+  background: #fff;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  content: "";
+  border: 1px solid #fff;
+  left: auto;
+  margin-top: -8rpx;
+  width: 16rpx;
+  height: 16rpx;
+  border-radius: 32rpx;
+  right: -10rpx;
+}
+.coupon.data-v-81f288e2:after {
+  position: absolute;
+  z-index: 1;
+  zoom: 1;
+  top: 50%;
+  background: #fff;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  content: "";
+  border: 1px solid #fff;
+  margin-top: -8rpx;
+  width: 16rpx;
+  height: 16rpx;
+  border-radius: 32rpx;
+  left: -10rpx;
+}
+.coupon--sm.data-v-81f288e2 {
+  font-size: 24rpx;
+  padding: 8rpx 30rpx;
+}
+.coupon--sm.data-v-81f288e2:before {
+  margin-top: -6rpx;
+  width: 10rpx;
+  height: 10rpx;
+  border-radius: 20rpx;
+  right: -8rpx;
+}
+.coupon--sm.data-v-81f288e2:after {
+  margin-top: -6rpx;
+  width: 10rpx;
+  height: 10rpx;
+  border-radius: 20rpx;
+  left: -8rpx;
+}
+.coupon--lg.data-v-81f288e2 {
+  font-size: 40rpx;
+  padding: 24rpx 60rpx;
+}
+.coupon--lg.data-v-81f288e2:before {
+  margin-top: -11rpx;
+  width: 20rpx;
+  height: 20rpx;
+  border-radius: 40rpx;
+  right: -10rpx;
+}
+.coupon--lg.data-v-81f288e2:after {
+  margin-top: -11rpx;
+  width: 20rpx;
+  height: 20rpx;
+  border-radius: 40rpx;
+  left: -10rpx;
+}
+

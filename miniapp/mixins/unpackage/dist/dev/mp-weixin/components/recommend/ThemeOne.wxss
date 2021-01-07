@@ -1,0 +1,76 @@
+.theme-one-box.data-v-602a8cc4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.theme-one-item.data-v-602a8cc4 {
+  width: 49%;
+  height: 200rpx;
+  padding: 0 20rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f5f2f9;
+  position: relative;
+  margin-top: 2%;
+}
+.theme-title-box.data-v-602a8cc4 {
+  font-size: 24rpx;
+}
+.theme-one-title.data-v-602a8cc4 {
+  line-height: 32rpx;
+  word-break: break-all;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.theme-one-price.data-v-602a8cc4 {
+  padding-top: 18rpx;
+}
+.theme-one-present.data-v-602a8cc4 {
+  color: #fc4d52;
+  font-weight: bold;
+}
+.theme-one-original.data-v-602a8cc4 {
+  display: inline-block;
+  color: #606266;
+  text-decoration: line-through;
+  padding-left: 12rpx;
+  -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-transform-origin: center center;
+      -ms-transform-origin: center center;
+          transform-origin: center center;
+}
+.theme-one-img.data-v-602a8cc4 {
+  width: 160rpx;
+  height: 160rpx;
+  display: block;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+

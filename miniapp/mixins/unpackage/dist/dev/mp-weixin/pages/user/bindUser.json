@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "绑定账号",
+  "usingComponents": {
+    "bind-model": "/components/bindModel/bindModel",
+    "em-button": "/components/button/button"
+  }
+}

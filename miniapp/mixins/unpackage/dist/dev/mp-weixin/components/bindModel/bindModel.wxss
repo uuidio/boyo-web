@@ -1,0 +1,29 @@
+.model-title.data-v-51fbca36 {
+  margin-bottom: 60rpx;
+  color: #000;
+}
+.footer-btn.data-v-51fbca36 {
+  margin-top: 60rpx;
+}
+.footer-btn button.data-v-51fbca36 {
+  width: 220rpx !important;
+  display: inline-block;
+  line-height: 60rpx;
+  height: 60rpx;
+  border-radius: 40rpx;
+  font-size: 24rpx;
+}
+.footer-btn button.data-v-51fbca36::after {
+  display: none;
+}
+.footer-btn button.data-v-51fbca36:first-child {
+  background: #fff;
+  border: 1px solid #fc4d52;
+  color: #fc4d52;
+}
+.footer-btn button.data-v-51fbca36:last-child {
+  margin-left: 30rpx;
+  background: #f00;
+  color: #fff;
+}
+

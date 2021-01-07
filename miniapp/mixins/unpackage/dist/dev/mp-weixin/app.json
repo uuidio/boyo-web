@@ -1,0 +1,90 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/goods/class",
+    "pages/brand/brand",
+    "pages/brand/lists",
+    "pages/cart/cart",
+    "pages/shop/index",
+    "pages/user/bindUser",
+    "pages/user/index",
+    "pages/goods/search",
+    "pages/goods/lists",
+    "pages/goods/detail",
+    "pages/goods/rate",
+    "pages/user/order/saleType",
+    "pages/user/order/saleDetail",
+    "pages/user/order/lists",
+    "pages/user/order/aftersalesLists",
+    "pages/user/order/evaluate",
+    "pages/checkout/index",
+    "pages/checkout/pickStore",
+    "pages/user/order/detail",
+    "pages/user/order/refundDetail",
+    "pages/user/order/waybill",
+    "pages/checkout/checkoutAdd",
+    "pages/checkout/addCheckoutAdd",
+    "pages/checkout/status",
+    "pages/activity/seckill",
+    "pages/activity/group",
+    "pages/activity/groupDetail",
+    "pages/activity/couponList",
+    "pages/user/address",
+    "pages/user/addAddress",
+    "pages/user/favorite",
+    "pages/user/coupon",
+    "pages/user/setting/setting",
+    "pages/user/setting/setValue",
+    "pages/activity/integral",
+    "pages/user/point"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "环游商城",
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#fc4d52",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/icon/tabbar/home_light.png",
+        "selectedIconPath": "static/icon/tabbar/home_light_on.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/goods/class",
+        "iconPath": "static/icon/tabbar/sort_light.png",
+        "selectedIconPath": "static/icon/tabbar/sort_light_on.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/brand/brand",
+        "iconPath": "static/icon/tabbar/brand_light.png",
+        "selectedIconPath": "static/icon/tabbar/brand_light_on.png",
+        "text": "品牌"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "iconPath": "static/icon/tabbar/cart_light.png",
+        "selectedIconPath": "static/icon/tabbar/cart_light_on.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "iconPath": "static/icon/tabbar/my_light.png",
+        "selectedIconPath": "static/icon/tabbar/my_light_on.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "navigateToMiniProgramAppIdList": [
+    "wxe6fdabad206fe97b"
+  ],
+  "usingComponents": {}
+}

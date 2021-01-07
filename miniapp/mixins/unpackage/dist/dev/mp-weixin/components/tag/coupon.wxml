@@ -1,0 +1,1 @@
+<view class="{{['coupon data-v-81f288e2','coupon--'+size]}}"><view class="_i data-v-81f288e2"></view><slot></slot><view class="_i data-v-81f288e2"></view></view>

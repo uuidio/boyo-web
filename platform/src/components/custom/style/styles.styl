@@ -1,0 +1,40 @@
+ .swiper_images li:hover .item_del
+    display block
+
+  .swiper_images li
+    padding 10px
+    margin 10px 0
+    display flex
+    background #ffffff
+    border 1px dashed #e5e5e5
+    position relative
+
+    .item_del
+      position absolute
+      right -10px
+      top -18px
+      color #666
+      z-index 4
+      font-size 20px
+      display none
+      cursor pointer
+
+    .swiper_img
+      width 80px
+      margin-right 10px
+
+      img
+        width 100%
+
+    .swiper_txt >>> .swiper_inp
+      width 200px
+      font-size 12 pxbo
+
+  .swiper_txt > div
+    display flex
+    align-items center
+    margin-bottom 15px
+
+    > span
+      display inline-block
+      width 60px

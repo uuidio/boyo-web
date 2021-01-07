@@ -1,0 +1,20 @@
+.coupon-wrap.data-v-c9f21658 {
+  padding: 20rpx;
+}
+.tab-box.data-v-c9f21658 {
+  white-space: nowrap;
+  height: 76rpx;
+  line-height: 76rpx;
+  background: #fff;
+}
+.tab-box .item.data-v-c9f21658 {
+  display: inline-block;
+  min-width: 150rpx;
+  margin-right: 15rpx;
+  text-align: center;
+  font-size: 28rpx;
+}
+.tab-box .item.active.data-v-c9f21658 {
+  color: #e64340;
+}
+

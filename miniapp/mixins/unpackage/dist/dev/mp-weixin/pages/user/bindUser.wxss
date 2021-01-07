@@ -1,0 +1,43 @@
+.data-v-4276515c page {
+  background: #fff;
+}
+.loginBox.data-v-4276515c {
+  text-align: center;
+  background: #fff;
+  color: #666;
+  padding-top: 150rpx;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.loginBox .loginButton button.data-v-4276515c {
+  width: 250rpx;
+  line-height: 80rpx;
+  margin-top: 40rpx;
+}
+.logoImg.data-v-4276515c {
+  width: 160rpx;
+  margin: 0 auto 80rpx;
+}
+.logoImg image.data-v-4276515c {
+  width: 100%;
+}
+.btnBox.data-v-4276515c {
+  margin: 0 80rpx;
+}
+.getInfoBtn.data-v-4276515c {
+  height: 75rpx;
+  line-height: 75rpx;
+  border-radius: 40rpx;
+  background: #e64340;
+}
+.getPhoneBtn.data-v-4276515c {
+  background: none;
+  margin-top: 40rpx;
+}
+.getPhoneBtn.data-v-4276515c::after {
+  display: none;
+}
+

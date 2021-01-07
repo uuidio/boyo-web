@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "goods-lists": "/components/lists/GoodsLists"
+  },
+  "component": true
+}
