@@ -1,0 +1,25 @@
+.mp-search-box.data-v-52d39c1d {
+  background: #ff4a41;
+  color: #fff;
+}
+.searchBox.data-v-52d39c1d {
+  position: relative;
+  z-index: 888;
+}
+.index-box.data-v-52d39c1d {
+  position: relative;
+}
+.index-box .indexBg.data-v-52d39c1d {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.index-head.data-v-52d39c1d {
+  text-align: right;
+  padding-right: 90rpx;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 36rpx;
+}
+

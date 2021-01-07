@@ -1,0 +1,103 @@
+.pos-re100.data-v-4e0cd267 {
+  position: relative;
+}
+.copy-btn.data-v-4e0cd267 {
+  padding: 0rpx 10rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  border-radius: 8rpx;
+  background: #f5222d;
+  color: #fff;
+}
+.getImg.data-v-4e0cd267 {
+  width: 80%;
+  position: fixed;
+  bottom: 40rpx;
+  left: 10%;
+  border-radius: 40rpx;
+  background: #f5222d;
+  color: #fff;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+}
+.imgLists.data-v-4e0cd267 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  padding: 25rpx 25rpx 0;
+  background: #fff;
+}
+.imgLists .codeImgItem.data-v-4e0cd267 {
+  width: 220rpx;
+  height: 220rpx;
+  margin-bottom: 25rpx;
+  position: relative;
+}
+.imgLists .codeImgItem >image.data-v-4e0cd267 {
+  height: 100%;
+  width: 100%;
+}
+.imgLists .codeImgItem .checkIcon.data-v-4e0cd267 {
+  font-size: 40rpx;
+  position: absolute;
+  right: 5rpx;
+  top: 5rpx;
+  color: #999;
+}
+.imgLists .codeImgItem .active.data-v-4e0cd267 {
+  color: #f5222d;
+}
+.imgLists .codeImgItem.data-v-4e0cd267:not(:nth-child(3n)) {
+  margin-right: 20rpx;
+}
+.code-tabs >view.data-v-4e0cd267 {
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  color: #999;
+  background: #fff;
+  border-top: 1px solid #e7e7e7;
+  box-sizing: border-box;
+}
+.code-tabs .active.data-v-4e0cd267 {
+  color: #f5222d;
+}
+.code-box.data-v-4e0cd267 {
+  position: fixed;
+  height: calc(100% - 90rpx);
+  width: 100%;
+  left: 0;
+  top: 90rpx;
+  overflow-y: scroll;
+}
+.bg.data-v-4e0cd267 {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 90rpx;
+  height: calc(100% - 90rpx);
+  background: #ff5650;
+}
+.showImg.data-v-4e0cd267 {
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+}
+.btnLists.data-v-4e0cd267 {
+  width: 700rpx;
+  margin: 20rpx auto 0;
+}
+.btnLists >view.data-v-4e0cd267,
+.btnLists >button.data-v-4e0cd267 {
+  height: 98rpx;
+  line-height: 98rpx;
+  border-radius: 10rpx;
+  font-size: 36rpx;
+  color: #333;
+  text-align: center;
+  background: #fff;
+}
+

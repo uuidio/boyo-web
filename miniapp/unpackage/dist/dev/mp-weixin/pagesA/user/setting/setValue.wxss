@@ -1,0 +1,12 @@
+.set-wrap.data-v-7fb76864 {
+  padding: 20rpx;
+}
+.in-box.data-v-7fb76864 {
+  background: #fff;
+  padding: 10rpx 20rpx;
+}
+.tip.data-v-7fb76864 {
+  margin: 20rpx;
+  color: #999;
+}
+

@@ -1,0 +1,157 @@
+.col-1668CC.data-v-823bbffe {
+  color: #1668cc;
+}
+.noPrize.data-v-823bbffe {
+  padding: 100rpx 0;
+  text-align: center;
+  font-size: 50rpx;
+}
+.toDet.data-v-823bbffe {
+  width: 80%;
+  margin: 20rpx auto 0;
+  background: #f5222d;
+  border-radius: 20rpx;
+  text-align: center;
+  line-height: 70rpx;
+  height: 70rpx;
+  color: #fff;
+}
+.prize-tit.data-v-823bbffe {
+  position: absolute;
+  left: 0;
+  text-align: center;
+  top: 40rpx;
+  font-size: 44rpx;
+  color: #fff;
+  width: 100%;
+}
+.prize-integral .imgBox image.data-v-823bbffe {
+  width: 120rpx;
+  height: 120rpx;
+  margin: 0 auto;
+}
+.prize-integral .textBox.data-v-823bbffe {
+  font-size: 36rpx;
+  color: #d4870e;
+}
+.draw-logo.data-v-823bbffe {
+  padding: 52rpx 25px;
+}
+.prize .imgBox image.data-v-823bbffe {
+  width: 140rpx;
+  height: 140rpx;
+}
+.prize-box.data-v-823bbffe {
+  background: #f8f8f8;
+}
+.draw-info.data-v-823bbffe {
+  padding: 40rpx 20rpx;
+}
+.ex-close.data-v-823bbffe {
+  position: absolute;
+  bottom: -100rpx;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.ex-close .icon-roundclose.data-v-823bbffe {
+  font-size: 60rpx;
+}
+.icon-fontSize.data-v-823bbffe {
+  font-size: 24px;
+}
+.home.data-v-823bbffe {
+  width: 100%;
+  height: 1683rpx;
+  background: url("https://ytxspt.ytholidayplaza.com/images/cj-activity/pageBg.jpg");
+  background-size: 100% 100%;
+}
+.home .btn.data-v-823bbffe {
+  border: 2rpx solid #fff;
+  padding: 10rpx 24rpx;
+  border-radius: 24rpx;
+}
+.home-title.data-v-823bbffe {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.home-title__text.data-v-823bbffe {
+  color: #000;
+  font-size: 40px;
+  font-weight: bold;
+}
+.home-wheel.data-v-823bbffe {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  background-image: url("https://ytxspt.ytholidayplaza.com/images/cj-activity/disc.png");
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+.home-wheel.data-v-823bbffe {
+    background-image: url("https://ytxspt.ytholidayplaza.com/images/cj-activity/disc.png");
+}
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+.home-wheel.data-v-823bbffe {
+    background-image: url("https://ytxspt.ytholidayplaza.com/images/cj-activity/disc.png");
+}
+}
+.home-result.data-v-823bbffe {
+  text-align: center;
+  margin-top: 50px;
+}
+.home-result__text.data-v-823bbffe {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+.name_list_box.data-v-823bbffe {
+  width: 688rpx;
+  height: 635rpx;
+  margin: 10rpx auto 0;
+  padding: 25rpx;
+  background-size: 100% 100%;
+  background-image: url("https://ytxspt.ytholidayplaza.com/images/cj-activity/nameListBg.png");
+}
+.name_list_title.data-v-823bbffe {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  padding: 87rpx 0 30rpx;
+  border-bottom: 1px solid #1668cc;
+}
+.name_list_title view.data-v-823bbffe {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+}
+.name_lists.data-v-823bbffe {
+  height: 460rpx;
+}
+.name_list_item.data-v-823bbffe {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.name_list_item view.data-v-823bbffe {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+}
+.model-box.data-v-823bbffe .em-modal-box {
+  padding: 0;
+}
+

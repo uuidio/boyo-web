@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "奖品详情",
+  "usingComponents": {
+    "select-address": "/components/checkOut/selectAddress"
+  }
+}

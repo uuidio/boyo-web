@@ -1,0 +1,31 @@
+.point-wrap.data-v-b62b890e:before {
+  content: '';
+  width: 100%;
+  height: 1rpx;
+  background: #d7d7d7;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.point-wrap .wrap-main.data-v-b62b890e {
+  padding: 24rpx 20rpx 0;
+}
+.point-wrap .wrap-main .wrap-content.data-v-b62b890e {
+  background: #fff;
+  border-radius: 16rpx;
+  padding: 0 0 0 24rpx;
+}
+.point-wrap .wrap-main .wrap-content .detail-item.data-v-b62b890e {
+  height: 90rpx;
+  padding-right: 24rpx;
+}
+.img-box.data-v-b62b890e {
+  padding-top: 24rpx;
+  margin-right: 24rpx;
+}
+.img-box .card-img.data-v-b62b890e {
+  width: 100%;
+  border-radius: 16rpx;
+  margin-bottom: 10rpx;
+}
+

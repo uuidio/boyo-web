@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "售后详情",
+  "onReachBottomDistance": 50,
+  "usingComponents": {
+    "upload-img": "/components/uploadImg/uploadImg",
+    "van-popup": "/wxcomponents/vant/popup/index",
+    "van-radio": "/wxcomponents/vant/radio/index",
+    "van-radio-group": "/wxcomponents/vant/radio-group/index"
+  }
+}

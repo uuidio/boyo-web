@@ -1,0 +1,193 @@
+{
+  "pages": [
+    "pages/index/indexCustomer",
+    "pages/index/index",
+    "pages/selfEdit/selfEdit",
+    "pages/goods/class",
+    "pages/goods/platformClass",
+    "pages/user/index",
+    "pages/cart/cart"
+  ],
+  "subPackages": [
+    {
+      "root": "pagesA",
+      "pages": [
+        "checkout/index",
+        "checkout/pickStore",
+        "checkout/checkoutAdd",
+        "checkout/addCheckoutAdd",
+        "checkout/status",
+        "checkout/groupStatus",
+        "article/articleList",
+        "article/articleDetail",
+        "brand/brand",
+        "brand/lists",
+        "selfHelpScore/ticketRecord",
+        "selfHelpScore/selfHelpScore",
+        "goods/detail",
+        "goods/rate",
+        "goods/search",
+        "goods/lists",
+        "user/login/agreement",
+        "user/setting/setting",
+        "user/setting/userinfoSetting",
+        "user/setting/setValue",
+        "user/address",
+        "user/addAddress",
+        "user/favorite",
+        "user/memberCard",
+        "user/point",
+        "user/pointDetail",
+        "user/coupon",
+        "user/couponDetail",
+        "user/order/refundDetail",
+        "user/order/waybill",
+        "user/order/detail",
+        "user/order/saleType",
+        "user/order/saleDetail",
+        "user/order/lists",
+        "user/order/aftersalesLists",
+        "user/order/evaluate",
+        "user/order/logStep",
+        "user/login/login",
+        "user/bindUser",
+        "index/groupProject",
+        "user/wallet/setPassword",
+        "user/wallet/status",
+        "user/wallet/index",
+        "user/wallet/authentication",
+        "user/wallet/payment",
+        "user/wallet/pwdAuthentication",
+        "user/wallet/transactionList",
+        "user/wallet/transactionDetail",
+        "user/wallet/bindingCard",
+        "user/wallet/physicalCard",
+        "user/wallet/physicalCardDetail",
+        "user/wallet/giftCard",
+        "user/wallet/giftCardDetail",
+        "user/wallet/transfer",
+        "user/wallet/recharge",
+        "user/wallet/cardAgreement"
+      ]
+    },
+    {
+      "root": "pagesB",
+      "pages": [
+        "shop/index",
+        "goods/goodsCode",
+        "activity/activityDetail",
+        "activity/seckill",
+        "activity/seckillDetail",
+        "activity/group",
+        "activity/groupDetail",
+        "activity/integral",
+        "activity/cattleCoinStore",
+        "activity/exchangeRecord",
+        "activity/coinExchange",
+        "activity/couponList",
+        "activity/customActivity",
+        "activity/draw",
+        "activity/prizeLists",
+        "prize/lists",
+        "prize/detail",
+        "user/generalize/index",
+        "user/generalize/applyForm",
+        "user/generalize/promoterApply",
+        "user/generalize/applyPromoter",
+        "user/generalize/desc",
+        "user/generalize/order",
+        "user/generalize/depositLists",
+        "user/generalize/deposit",
+        "user/generalize/depositSuccess",
+        "user/generalize/depositFail",
+        "user/generalize/partnerPoster",
+        "user/generalize/depositView",
+        "user/generalize/myCode",
+        "user/generalize/privy",
+        "user/generalize/client",
+        "user/generalize/partnerRelated",
+        "user/teammate/index",
+        "activity/status",
+        "activity/activityList",
+        "activity/order/lists"
+      ]
+    },
+    {
+      "root": "pagesC",
+      "pages": [
+        "pages/home/home"
+      ],
+      "plugins": {
+        "live-player-plugin": {
+          "version": "1.2.1",
+          "provider": "wx2b03c6e691cd7370"
+        }
+      }
+    }
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "极汇Go",
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#128D80",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/indexCustomer",
+        "iconPath": "static/images/tabbar/homePage_false.png",
+        "selectedIconPath": "static/images/tabbar/homePage_true.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/goods/platformClass",
+        "iconPath": "static/images/tabbar/class_false.png",
+        "selectedIconPath": "static/images/tabbar/class_true.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "iconPath": "static/images/tabbar/cart_false.png",
+        "selectedIconPath": "static/images/tabbar/cart_true.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "iconPath": "static/images/tabbar/my_false.png",
+        "selectedIconPath": "static/images/tabbar/my_true.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "preloadRule": {
+    "pages/index/indexCustomer": {
+      "network": "all",
+      "packages": [
+        "pagesA"
+      ]
+    },
+    "pages/cart/cart": {
+      "network": "all",
+      "packages": [
+        "pagesB"
+      ]
+    }
+  },
+  "navigateToMiniProgramAppIdList": [
+    "wxe6fdabad206fe97b",
+    "wxae84e7f8578d8883",
+    "wx3f629dd1316416ec",
+    "wx5a7bd5068d2ab421"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
+}

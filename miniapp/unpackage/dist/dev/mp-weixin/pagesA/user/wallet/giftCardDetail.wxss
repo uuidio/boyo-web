@@ -1,0 +1,67 @@
+.card-wrap.data-v-b59deed2 {
+  height: 100vh;
+  background: #fff;
+  padding: 30rpx 20rpx;
+  box-sizing: border-box;
+}
+.card-wrap .img-box.data-v-b59deed2 {
+  position: relative;
+}
+.card-wrap .img-box .card-img.data-v-b59deed2 {
+  width: 100%;
+  border-radius: 16rpx;
+  vertical-align: top;
+}
+.card-wrap .img-box .card-no.data-v-b59deed2 {
+  position: absolute;
+  left: 0;
+  top: 24rpx;
+  width: 85%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-left: 32rpx;
+  font-size: 24rpx;
+}
+.card-wrap .info-item.data-v-b59deed2 {
+  height: 104rpx;
+  padding: 0 32rpx;
+}
+.card-wrap .info-item .head-portrait.data-v-b59deed2 {
+  width: 47rpx;
+  height: 47rpx;
+  vertical-align: middle;
+  margin-right: 24rpx;
+  border-radius: 50%;
+}
+.card-wrap .operate-btn.data-v-b59deed2 {
+  width: 40%;
+  margin: 40rpx auto 0;
+  hegiht: 62rpx;
+  line-height: 62rpx;
+  text-align: center;
+  border-radius: 38rpx;
+  border: 1px solid #f03d34;
+  box-sizing: border-box;
+  font-size: 30rpx;
+  color: #f03d34;
+}
+.card-wrap .operate-btn.btn-confirm.data-v-b59deed2 {
+  color: #fff;
+  background: #f03d34;
+}
+.card-wrap .operate-btn.btn-disabled.data-v-b59deed2 {
+  color: #fff;
+  border-color: #c3c3c3;
+  background: #c3c3c3;
+}
+.wrap-m.data-v-b59deed2 {
+  margin: 36rpx 0 45rpx;
+}
+.wrap-m .tips.data-v-b59deed2 {
+  margin-top: 25rpx;
+}
+.card-label.data-v-b59deed2 {
+  margin-top: 37rpx;
+}
+

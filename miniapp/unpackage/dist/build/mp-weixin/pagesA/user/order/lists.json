@@ -1,0 +1,14 @@
+{
+  "navigationBarTitleText": "订单列表",
+  "onReachBottomDistance": 50,
+  "usingComponents": {
+    "van-tab": "/wxcomponents/vant/tab/index",
+    "van-tabs": "/wxcomponents/vant/tabs/index",
+    "van-button": "/wxcomponents/vant/button/index",
+    "van-popup": "/wxcomponents/vant/popup/index",
+    "van-radio": "/wxcomponents/vant/radio/index",
+    "van-radio-group": "/wxcomponents/vant/radio-group/index",
+    "uni-load-more": "/node-modules/_@dcloudio_uni-ui@1.2.5@@dcloudio/uni-ui/lib/uni-load-more/uni-load-more",
+    "no-data": "/components/lists/nullData"
+  }
+}

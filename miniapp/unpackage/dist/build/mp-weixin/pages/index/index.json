@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "极汇Go",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "van-action-sheet": "/wxcomponents/vant/action-sheet/index"
+  }
+}

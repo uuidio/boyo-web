@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "拼团活动",
+  "usingComponents": {
+    "uni-load-more": "/node-modules/_@dcloudio_uni-ui@1.2.5@@dcloudio/uni-ui/lib/uni-load-more/uni-load-more",
+    "tui-modal": "/components/modal/modal",
+    "explain": "/components/explain/index"
+  }
+}

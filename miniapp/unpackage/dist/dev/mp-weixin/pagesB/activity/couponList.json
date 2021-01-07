@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "领券中心",
+  "usingComponents": {
+    "coupon-item": "/components/user/coupon",
+    "null-data": "/components/lists/nullData",
+    "uni-load-more": "/node-modules/_@dcloudio_uni-ui@1.2.5@@dcloudio/uni-ui/lib/uni-load-more/uni-load-more"
+  }
+}

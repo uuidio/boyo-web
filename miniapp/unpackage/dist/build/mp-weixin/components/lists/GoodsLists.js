@@ -1,0 +1,10 @@
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["components/lists/GoodsLists"],{"0142c":function(t,n,o){"use strict";var e,r=function(){var t=this,n=t.$createElement,o=(t._self._c,t.__map(t.goodsLists,(function(n,o){var e=t.__map(n.good_sign&&n.good_sign.activity?n.good_sign.activity:[],(function(n,o){var e=n.indexOf("秒杀");return{$orig:t.__get_orig(n),g0:e}})),r=t.pickType(n.pick_type);return{$orig:t.__get_orig(n),l0:e,m0:r}})));t.$mp.data=Object.assign({},{$root:{l1:o}})},i=[];o.d(n,"b",(function(){return r})),o.d(n,"c",(function(){return i})),o.d(n,"a",(function(){return e}))},"1ce6":function(t,n,o){"use strict";o.r(n);var e=o("98af"),r=o.n(e);for(var i in e)"default"!==i&&function(t){o.d(n,t,(function(){return e[t]}))}(i);n["default"]=r.a},"2a85":function(t,n,o){"use strict";var e=o("6737"),r=o.n(e);r.a},6737:function(t,n,o){},"76b8":function(t,n,o){"use strict";o.r(n);var e=o("0142c"),r=o("1ce6");for(var i in r)"default"!==i&&function(t){o.d(n,t,(function(){return r[t]}))}(i);o("2a85");var u,a=o("f0c5"),c=Object(a["a"])(r["default"],e["b"],e["c"],!1,null,"9b7827e2",null,!1,e["a"],u);n["default"]=c.exports},"98af":function(t,n,o){"use strict";Object.defineProperty(n,"__esModule",{value:!0}),n.default=void 0;var e={name:"GoodsLists",props:{distribution:{type:Boolean,default:function(){return!1}},goodsLists:Array,isList:{type:Boolean,default:!1}},computed:{pickType:function(){return function(t){for(var n=t.concat([]),o=0;o<n.length;o++)"0"===n[o]?n[o]="快递":"1"===n[o]?n[o]="自提":"2"===n[o]&&(n[o]="配送到家");return n.toString()}}},data:function(){return{showArr:[]}},mounted:function(){},methods:{loadImg:function(t){this.$set(this.showArr,t,!0)}}};n.default=e}}]);
+;(global["webpackJsonp"] = global["webpackJsonp"] || []).push([
+    'components/lists/GoodsLists-create-component',
+    {
+        'components/lists/GoodsLists-create-component':(function(module, exports, __webpack_require__){
+            __webpack_require__('543d')['createComponent'](__webpack_require__("76b8"))
+        })
+    },
+    [['components/lists/GoodsLists-create-component']]
+]);

@@ -1,0 +1,10 @@
+require('../../common/vendor.js');(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["pagesB/activity/components/Swipers"],{"8b58":function(t,n,e){"use strict";e.r(n);var i=e("b9ee"),c=e("d48e");for(var a in c)"default"!==a&&function(t){e.d(n,t,(function(){return c[t]}))}(a);e("acd2");var r,u=e("f0c5"),o=Object(u["a"])(c["default"],i["b"],i["c"],!1,null,"7effa342",null,!1,i["a"],r);n["default"]=o.exports},"8c15":function(t,n,e){},acd2:function(t,n,e){"use strict";var i=e("8c15"),c=e.n(i);c.a},b9ee:function(t,n,e){"use strict";var i,c=function(){var t=this,n=t.$createElement,e=(t._self._c,t.px(t.config.mT)),i=t.px(t.config.mL),c=t.px(t.config.r);t.$mp.data=Object.assign({},{$root:{m0:e,m1:i,m2:c}})},a=[];e.d(n,"b",(function(){return c})),e.d(n,"c",(function(){return a})),e.d(n,"a",(function(){return i}))},ccf6:function(t,n,e){"use strict";(function(t){Object.defineProperty(n,"__esModule",{value:!0}),n.default=void 0;var e={props:{options:{type:Array,default:[]},config:Object},data:function(){return{swiperCurrent:0,imgheights:[]}},methods:{px:function(n){return t.upx2px(2*n)+"px"},to:function(t){t.value&&this.customTo(t)},swiperChange:function(t){var n=t.detail.current;this.swiperCurrent=n},imageLoad:function(t){var n=t.detail.width,e=t.detail.height,i=n/e;console.log("图片",t);var c=750/i,a=(e=c,this.imgheights);a[t.target.dataset["index"]]=e,this.imgheights=[].concat(a)}},mounted:function(){}};n.default=e}).call(this,e("543d")["default"])},d48e:function(t,n,e){"use strict";e.r(n);var i=e("ccf6"),c=e.n(i);for(var a in i)"default"!==a&&function(t){e.d(n,t,(function(){return i[t]}))}(a);n["default"]=c.a}}]);
+;(global["webpackJsonp"] = global["webpackJsonp"] || []).push([
+    'pagesB/activity/components/Swipers-create-component',
+    {
+        'pagesB/activity/components/Swipers-create-component':(function(module, exports, __webpack_require__){
+            __webpack_require__('543d')['createComponent'](__webpack_require__("8b58"))
+        })
+    },
+    [['pagesB/activity/components/Swipers-create-component']]
+]);

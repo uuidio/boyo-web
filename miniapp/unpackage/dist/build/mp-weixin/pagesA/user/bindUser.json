@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "登录",
+  "usingComponents": {
+    "bind-model": "/components/bindModel/bindModel",
+    "em-button": "/components/button/button"
+  }
+}

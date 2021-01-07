@@ -1,0 +1,177 @@
+page.data-v-76c33cfc {
+  background: #f8f8f8;
+}
+.go-back-box.data-v-76c33cfc {
+  width: calc(100% - 50rpx);
+  padding-left: 15rpx;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.go-back-box .icon-back_light.data-v-76c33cfc {
+  font-size: 34rpx;
+  color: #fff;
+}
+.flex-center.data-v-76c33cfc {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.section.data-v-76c33cfc {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+          justify-content: space-around;
+  -webkit-align-content: center;
+          align-content: center;
+  background: #fff;
+  border-radius: 10rpx;
+}
+.user-section.data-v-76c33cfc {
+/*height 430rpx*/
+/*padding 130rpx 30rpx 0*/
+  position: relative;
+/*border-radius 6px 6px 300px 300px / 6px 6px 20px 20px
+	background:linear-gradient(to right bottom,#FF4643,#CF2926);*/
+}
+.user-section .top-bg.data-v-76c33cfc {
+  width: 100%;
+  vertical-align: top;
+}
+.user-section .user_center.data-v-76c33cfc {
+  position: absolute;
+  top: 130rpx;
+  width: 100%;
+  padding: 0 25rpx;
+  box-sizing: border-box;
+}
+.user-header.data-v-76c33cfc {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 10rpx;
+  padding-top: 44rpx;
+}
+.user-header .portrait.data-v-76c33cfc {
+  width: 84rpx;
+  height: 84rpx;
+  border: 5rpx solid #fff;
+  border-radius: 50%;
+}
+.user-header .username.data-v-76c33cfc {
+  font-size: 28rpx;
+  color: #fff;
+  margin-left: 25rpx;
+  font-weight: bold;
+}
+.user-header .icon-setting.data-v-76c33cfc {
+  width: 38rpx;
+  height: 38rpx;
+}
+.wallet-info.data-v-76c33cfc {
+  padding: 38rpx 0 38rpx 62rpx;
+  position: absolute;
+  bottom: 0;
+  left: 25rpx;
+  right: 25rpx;
+  height: 250rpx;
+  margin-bottom: -100rpx;
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 10rpx;
+}
+.wallet-info .icon-eyes.data-v-76c33cfc {
+  width: 30rpx;
+  height: 22rpx;
+  vertical-align: middle;
+  margin-left: 30rpx;
+}
+.wallet-info .info-label.data-v-76c33cfc {
+  font-size: 24rpx;
+  color: #999;
+}
+.wallet-info .payment-code-entry.data-v-76c33cfc {
+  width: 163rpx;
+  height: 51rpx;
+}
+.wallet-info .total-assets.data-v-76c33cfc {
+  font-size: 50rpx;
+  line-height: 1;
+}
+.wallet-info .total-assets .symbol.data-v-76c33cfc {
+  font-size: 34rpx;
+  margin-right: 15rpx;
+}
+.wallet-info .info-b.data-v-76c33cfc {
+  margin-top: 50rpx;
+  padding-right: 62rpx;
+  font-size: 36rpx;
+  height: 40rpx;
+}
+.my_assets.data-v-76c33cfc {
+  padding: 36rpx 0 18rpx;
+  color: #666;
+  background: #fff;
+  border-radius: 10rpx;
+  margin: 120rpx 25rpx 0;
+}
+.my_assets .ac_title.data-v-76c33cfc {
+  font-size: 34rpx;
+  line-height: 40rpx;
+  font-weight: bold;
+  color: #333;
+  padding: 10rpx 0;
+}
+.my_assets .ac_list.data-v-76c33cfc {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  margin-bottom: 42rpx;
+}
+.my_assets .ac_list .ac_item.data-v-76c33cfc {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  text-align: center;
+}
+.my_assets .ac_list .ac_item .item_count .item_img.data-v-76c33cfc {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 0 auto;
+  margin-top: 20rpx;
+}
+.my_assets .ac_list .ac_item .item_count .item_img image.data-v-76c33cfc {
+  width: 100%;
+  height: 100%;
+}
+.my_assets .ac_list .ac_item .item_name.data-v-76c33cfc {
+  font-size: 26rpx;
+  line-height: 66rpx;
+  color: #626262;
+}
+.mb-5.data-v-76c33cfc {
+  margin-bottom: 10rpx;
+}
+

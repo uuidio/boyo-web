@@ -1,0 +1,106 @@
+.page-wrap .wrap-main .wrap-content .ticket-record-list.data-v-7a4faaca {
+  padding: 30rpx 20rpx;
+}
+.page-wrap .wrap-main .wrap-content .ticket-record-list .record-item.data-v-7a4faaca {
+  background: #fff;
+  border-radius: 16rpx;
+  margin-bottom: 30rpx;
+}
+.page-wrap .wrap-main .wrap-content .ticket-record-list .record-item .record-date.data-v-7a4faaca {
+  font-size: 24rpx;
+  color: #999;
+  padding: 20rpx 30rpx 0;
+}
+.page-wrap .wrap-main .wrap-content .ticket-record-list .record-item .fail-reasons.data-v-7a4faaca {
+  font-size: 26rpx;
+  color: #333;
+  line-height: 36rpx;
+  margin-top: 30rpx;
+  padding: 0 30rpx;
+}
+.page-wrap .wrap-main .wrap-content .ticket-record-list .record-item .audit-info.data-v-7a4faaca {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  padding: 0 30rpx;
+  margin-top: 30rpx;
+}
+.page-wrap .wrap-main .wrap-content .ticket-record-list .record-item .audit-info .audit-item.data-v-7a4faaca {
+  padding-left: 20rpx;
+  position: relative;
+}
+.page-wrap .wrap-main .wrap-content .ticket-record-list .record-item .audit-info .audit-item.data-v-7a4faaca:first-of-type:after {
+  content: '';
+  position: absolute;
+  top: 19rpx;
+  left: 65%;
+  width: 80%;
+  height: 1rpx;
+  background: #000;
+}
+.page-wrap .wrap-main .wrap-content .ticket-record-list .record-item .audit-info .audit-item.data-v-7a4faaca:last-of-type {
+  width: 37%;
+}
+.page-wrap .wrap-main .wrap-content .ticket-record-list .record-item .audit-info .audit-item.status-wait .audit-status.data-v-7a4faaca {
+  color: #999;
+  font-weight: bold;
+}
+.page-wrap .wrap-main .wrap-content .ticket-record-list .record-item .audit-info .audit-item.status-wait .audit-date.data-v-7a4faaca {
+  font-weight: bold;
+}
+.page-wrap .wrap-main .wrap-content .ticket-record-list .record-item .audit-info .audit-item.status-wait.data-v-7a4faaca:before {
+  color: #999;
+}
+.page-wrap .wrap-main .wrap-content .ticket-record-list .record-item .audit-info .audit-item.status-fail.data-v-7a4faaca:before {
+  color: #999;
+}
+.page-wrap .wrap-main .wrap-content .ticket-record-list .record-item .audit-info .audit-item.data-v-7a4faaca:before {
+  content: '';
+  position: absolute;
+  top: 15rpx;
+  left: 0;
+  width: 10rpx;
+  height: 10rpx;
+  border-radius: 50%;
+  background: #000;
+}
+.page-wrap .wrap-main .wrap-content .ticket-record-list .record-item .audit-info .audit-item .audit-status.data-v-7a4faaca {
+  font-size: 26rpx;
+  color: #333;
+}
+.page-wrap .wrap-main .wrap-content .ticket-record-list .record-item .audit-info .audit-item .audit-date.data-v-7a4faaca {
+  font-size: 24rpx;
+  color: #999;
+  margin-top: 10rpx;
+}
+.page-wrap .wrap-main .wrap-content .ticket-record-list .record-item .view-pic.data-v-7a4faaca {
+  margin-top: 30rpx;
+  height: 80rpx;
+  border-top: 1rpx solid #d7d7d7;
+  box-sizing: border-box;
+  padding: 0 30rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+.page-wrap .wrap-main .wrap-content .ticket-record-list .record-item .view-pic .view-label.data-v-7a4faaca {
+  font-size: 26rpx;
+  color: #999;
+}
+.page-wrap .wrap-main .wrap-content .ticket-record-list .record-item .view-pic .icon-right.data-v-7a4faaca {
+  font-size: 30rpx;
+  color: #333;
+}
+

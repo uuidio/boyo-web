@@ -1,0 +1,35 @@
+.page-wrap.data-v-0cecfd9e {
+  padding: 30rpx 55rpx 30rpx;
+  box-sizing: border-box;
+  height: 100vh;
+}
+.page-wrap .card-info .card-img.data-v-0cecfd9e {
+  width: 39%;
+  vertical-align: middle;
+  margin-right: 20rpx;
+  border-radius: 16rpx;
+}
+.page-wrap .card-info .info-r.data-v-0cecfd9e {
+  overflow: hidden;
+}
+.page-wrap .leaving-msg.data-v-0cecfd9e {
+  border: 1px solid #ddd;
+  border-radius: 16rpx;
+  padding: 20rpx 30rpx;
+  height: 232rpx;
+  margin-top: 44rpx;
+  font-size: 24rpx;
+  line-height: 34rpx;
+  box-sizing: border-box;
+}
+.page-wrap .btn-transfer.data-v-0cecfd9e {
+  font-size: 30rpx;
+  text-align: center;
+  height: 75rpx;
+  line-height: 75rpx;
+  color: #fff;
+  margin-top: 44rpx;
+  background: #e74340;
+  border-radius: 38rpx;
+}
+

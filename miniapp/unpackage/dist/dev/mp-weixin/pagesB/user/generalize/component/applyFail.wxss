@@ -1,0 +1,18 @@
+.fail-icon.data-v-f8b34990 {
+  margin: 200rpx 0;
+  font-size: 150rpx;
+  color: #f5222d;
+}
+.apply-btn.data-v-f8b34990 {
+  width: 80%;
+  height: 90rpx;
+  line-height: 90rpx;
+  border-radius: 10rpx;
+  color: #fff;
+  text-align: center;
+  background: #ff4a41;
+  position: fixed;
+  bottom: 40rpx;
+  left: 10%;
+}
+

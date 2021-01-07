@@ -1,0 +1,10 @@
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["components/header/header"],{"247b":function(t,n,e){"use strict";var i,o=function(){var t=this,n=t.$createElement;t._self._c},u=[];e.d(n,"b",(function(){return o})),e.d(n,"c",(function(){return u})),e.d(n,"a",(function(){return i}))},"3fd8":function(t,n,e){},"481c":function(t,n,e){"use strict";e.r(n);var i=e("f7c7"),o=e.n(i);for(var u in i)"default"!==u&&function(t){e.d(n,t,(function(){return i[t]}))}(u);n["default"]=o.a},"5f5d":function(t,n,e){"use strict";var i=e("3fd8"),o=e.n(i);o.a},accd:function(t,n,e){"use strict";e.r(n);var i=e("247b"),o=e("481c");for(var u in o)"default"!==u&&function(t){e.d(n,t,(function(){return o[t]}))}(u);e("5f5d");var a,c=e("f0c5"),f=Object(c["a"])(o["default"],i["b"],i["c"],!1,null,"aa66cd86",null,!1,i["a"],a);n["default"]=f.exports},f7c7:function(t,n,e){"use strict";(function(t){Object.defineProperty(n,"__esModule",{value:!0}),n.default=void 0;var e={props:{showGoBack:{type:Boolean,default:!0},title:{type:String,default:""},boxBackground:{type:String,default:"transparent"},needPaddingTop:{type:Boolean,default:!0},routerLink:{type:String,default:""}},data:function(){return{btnWidth:"",width:"",height:"",top:"",btnHeight:"",myRight:""}},methods:{getInfo:function(){var n=this,e=wx.getMenuButtonBoundingClientRect();t.getSystemInfo({success:function(t){n.btnWidth=e.width,n.btnHeight=e.height,n.width=e.left||t.windowWidth,n.myRight=e.width+10||0,n.height=e.top?e.top+e.height+8:t.statusBarHeight+44,n.top=e.top?e.top+(e.height-32)/2:t.statusBarHeight+6,n.$emit("on-height",n.height)}})}},onReady:function(){},onLoad:function(t){},mounted:function(){this.getInfo()}};n.default=e}).call(this,e("543d")["default"])}}]);
+;(global["webpackJsonp"] = global["webpackJsonp"] || []).push([
+    'components/header/header-create-component',
+    {
+        'components/header/header-create-component':(function(module, exports, __webpack_require__){
+            __webpack_require__('543d')['createComponent'](__webpack_require__("accd"))
+        })
+    },
+    [['components/header/header-create-component']]
+]);

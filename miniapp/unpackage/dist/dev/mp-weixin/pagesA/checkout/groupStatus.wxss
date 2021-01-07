@@ -1,0 +1,100 @@
+.group-item.data-v-df86a688 {
+  border-bottom: 1px solid #e7e7e7;
+}
+.group-item .group-img.data-v-df86a688 {
+  width: 210rpx;
+  line-height: 210rpx;
+}
+.group-item .group-img image.data-v-df86a688 {
+  width: 100%;
+  height: 100%;
+  border-radius: 10rpx;
+}
+.group-item .group-text.data-v-df86a688 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  padding: 10rpx 0;
+}
+.group-item .group-text .count.data-v-df86a688 {
+  background: #fff0f0;
+  color: #e64340;
+  border-radius: 4rpx;
+  display: inline-block;
+  margin-top: 10rpx;
+  padding: 0 10rpx;
+}
+.group-time.data-v-df86a688 {
+  padding: 70rpx 90rpx 40rpx;
+}
+.group-time.data-v-df86a688 .uni-countdown {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+.group-time.data-v-df86a688 .uni-countdown__number {
+  background: #e64340 !important;
+  color: #fff !important;
+  border: none !important;
+}
+.submitBtn.data-v-df86a688 {
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  background: #e64340;
+  color: #fff;
+  border-radius: 10rpx;
+}
+.seeOrder.data-v-df86a688 {
+  background: transparent;
+  border: 1px solid #e64340;
+  box-sizing: border-box;
+  color: #e64340;
+}
+.userImgBox.data-v-df86a688 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  width: 335rpx;
+  margin: 70rpx auto;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.userImgBox image.data-v-df86a688 {
+  margin-top: 25rpx;
+}
+.userImgBox .userImg.data-v-df86a688 {
+  margin-right: 20rpx;
+}
+.userImgBox .userImg image.data-v-df86a688 {
+  display: block;
+  height: 90rpx;
+  width: 90rpx;
+  border-radius: 50%;
+  border: 2px solid #e64340;
+  box-sizing: border-box;
+}
+.userImgBox .group-icon image.data-v-df86a688 {
+  height: 90rpx;
+  width: 90rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}
+.group-tip.data-v-df86a688 {
+  padding-right: 25rpx;
+}
+.group-tip .col-666.data-v-df86a688 {
+  margin-top: 10rpx;
+  font-size: 28rpx;
+}
+

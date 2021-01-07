@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "平台分类",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "van-stepper": "/wxcomponents/vant/stepper/index",
+    "uni-load-more": "/node-modules/_@dcloudio_uni-ui@1.2.5@@dcloudio/uni-ui/lib/uni-load-more/uni-load-more",
+    "select-sku": "/components/selectSku/selectSku",
+    "tui-bottom-popup": "/components/bottom-popup/bottom-popup",
+    "tui-numberbox": "/components/numberbox/numberbox",
+    "tab-bar": "/components/tabbar/tabbar"
+  }
+}

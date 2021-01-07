@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "填写运单号",
+  "usingComponents": {
+    "van-action-sheet": "/wxcomponents/vant/action-sheet/index"
+  }
+}

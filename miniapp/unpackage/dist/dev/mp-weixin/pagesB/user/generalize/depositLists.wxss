@@ -1,0 +1,13 @@
+.list-item+.list-item.data-v-234774e9 {
+  border-top: 1px solid #ddd;
+}
+.deposit.data-v-234774e9 {
+  height: 50rpx;
+  padding: 0 15rpx;
+  border-radius: 40rpx;
+  line-height: 50rpx;
+  background: #f5222d;
+  color: #fff;
+  text-align: center;
+}
+

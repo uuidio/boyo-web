@@ -1,0 +1,52 @@
+.upload-img-box.data-v-5db37bdc {
+  border: 1px dashed #666;
+  box-sizing: border-box;
+  position: relative;
+}
+.upload-img-box .box-bg.data-v-5db37bdc {
+  width: 100%;
+  vertical-align: top;
+}
+.upload-img-box .box-bg.hide-img.data-v-5db37bdc {
+  opacity: 0;
+}
+.upload-img-box .upload-img.data-v-5db37bdc {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.upload-label.data-v-5db37bdc {
+  margin: 24rpx 0 12rpx;
+}
+.update-img.data-v-5db37bdc {
+  width: 160rpx;
+  height: 160rpx;
+  border: 1px dashed #666;
+  color: #666;
+  border-radius: 6rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  box-sizing: border-box;
+}
+progress.data-v-5db37bdc {
+/*width 160rpx*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+

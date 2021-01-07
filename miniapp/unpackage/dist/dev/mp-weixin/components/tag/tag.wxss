@@ -1,0 +1,103 @@
+.em-tag.data-v-1305548c {
+  box-sizing: border-box;
+  padding: 8rpx 24rpx;
+  font-size: 24rpx;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  color: #333;
+  border-radius: 16rpx;
+  background-color: #f8f8f8;
+  border: 1px solid #f8f8f8;
+}
+.em-tag--circle.data-v-1305548c {
+  border-radius: 30rpx;
+}
+.em-tag--mark-left.data-v-1305548c {
+  border-radius: 0 30rpx 30rpx 0;
+}
+.em-tag--mark-right.data-v-1305548c {
+  border-radius: 30rpx 0 0 30rpx;
+}
+.em-tag--disabled.data-v-1305548c {
+  opacity: 0.5;
+}
+.em-tag--sm.data-v-1305548c {
+  padding: 0rpx 10rpx;
+  font-size: 20rpx;
+  border-radius: 6rpx;
+}
+.em-tag--sm.em-tag--circle.data-v-1305548c {
+  border-radius: 20rpx;
+}
+.em-tag--sm.em-tag--mark-left.data-v-1305548c {
+  border-radius: 0 20rpx 20rpx 0;
+}
+.em-tag--sm.em-tag--mark-right.data-v-1305548c {
+  border-radius: 20rpx 0 0 20rpx;
+}
+.em-tag--lg.data-v-1305548c {
+  height: 60rpx;
+  padding: 12rpx 32rpx;
+  line-height: 60rpx;
+  font-size: 34rpx;
+}
+.em-tag--primary.data-v-1305548c {
+  color: #fff;
+  background-color: #1989fa;
+  border: 1px solid #1989fa;
+}
+.em-tag--primary.em-tag--inverted.data-v-1305548c {
+  color: #1989fa;
+  background-color: #fff;
+  border: 1px solid #1989fa;
+}
+.em-tag--success.data-v-1305548c {
+  color: #fff;
+  background-color: #07c160;
+  border: 1px solid #07c160;
+}
+.em-tag--success.em-tag--inverted.data-v-1305548c {
+  color: #07c160;
+  background-color: #fff;
+  border: 1px solid #07c160;
+}
+.em-tag--warning.data-v-1305548c {
+  color: #fff;
+  background-color: #f0ad4e;
+  border: 1px solid #f0ad4e;
+}
+.em-tag--warning.em-tag--inverted.data-v-1305548c {
+  color: #f0ad4e;
+  background-color: #fff;
+  border: 1px solid #f0ad4e;
+}
+.em-tag--dark.data-v-1305548c {
+  color: #fff;
+  background-color: #303133;
+  border: 1px solid #303133;
+}
+.em-tag--dark.em-tag--inverted.data-v-1305548c {
+  color: #303133;
+  background-color: #fff;
+  border: 1px solid #303133;
+}
+.em-tag--error.data-v-1305548c {
+  color: #fff;
+  background-color: #fc4d52;
+  border: 1px solid #fc4d52;
+}
+.em-tag--error.em-tag--inverted.data-v-1305548c {
+  color: #fc4d52;
+  background-color: #fff;
+  border: 1px solid #fc4d52;
+}
+.em-tag--inverted.data-v-1305548c {
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #f8f8f8;
+}
+

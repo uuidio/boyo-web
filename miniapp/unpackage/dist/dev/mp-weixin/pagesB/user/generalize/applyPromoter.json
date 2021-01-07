@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "推广员认证与申请",
+  "usingComponents": {
+    "van-popup": "/wxcomponents/vant/popup/index",
+    "upload-img": "/components/uploadImg/uploadImg",
+    "upload-identity-card": "/pagesB/components/uploadImg/uploadIdentityCard"
+  }
+}

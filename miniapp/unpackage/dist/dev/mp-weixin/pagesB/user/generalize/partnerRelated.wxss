@@ -1,0 +1,10 @@
+.partner .imgBox.data-v-2f59af15 {
+  width: 70rpx;
+  height: 70rpx;
+}
+.partner .imgBox image.data-v-2f59af15 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+

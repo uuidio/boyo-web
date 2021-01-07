@@ -1,0 +1,162 @@
+.payment-wrap.data-v-65f82fb0 {
+  height: 100vh;
+  background: #d23737;
+  padding: 10rpx 18rpx;
+  box-sizing: border-box;
+}
+.payment-wrap .payment-code-box.data-v-65f82fb0 {
+  background: #fff;
+  border-radius: 10rpx;
+}
+.payment-wrap .payment-code-box .box-t.data-v-65f82fb0 {
+  height: 108rpx;
+  line-height: 108rpx;
+  padding: 0 42rpx;
+  background: #f1eff2;
+  color: #000;
+  border-radius: 10rpx 10rpx 0 0;
+}
+.payment-wrap .payment-code-box .box-t .icon-bar-code.data-v-65f82fb0 {
+  width: 35rpx;
+  height: 33rpx;
+  margin-right: 20rpx;
+}
+.payment-wrap .payment-code-box .box-m.data-v-65f82fb0 {
+  padding: 85rpx 0 64rpx;
+}
+.payment-wrap .payment-code-box .box-m .img-box.data-v-65f82fb0 {
+  width: 60%;
+  margin: 0 auto;
+}
+.payment-wrap .payment-code-box .box-m .img-box image.data-v-65f82fb0 {
+  width: 100%;
+}
+.payment-wrap .payment-code-box .box-m .code-refresh.data-v-65f82fb0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  color: #8f8f8f;
+  font-size: 26rpx;
+  margin-top: 25rpx;
+}
+.payment-wrap .payment-code-box .box-m .code-refresh .refresh-icon.data-v-65f82fb0 {
+  width: 26rpx;
+  height: 26rpx;
+  margin-left: 14rpx;
+}
+.payment-wrap .payment-code-box .box-b.data-v-65f82fb0 {
+  height: 120rpx;
+  box-sizing: border-box;
+  margin: 0 35rpx;
+  padding-left: 6rpx;
+  font-size: 30rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  color: #000;
+  border-top: 1px solid #e6e6e6;
+}
+.payment-wrap .payment-code-box .box-b .icon-pay-bag.data-v-65f82fb0 {
+  width: 36rpx;
+  height: 35rpx;
+}
+.payment-wrap .payment-code-box .box-b .icon-right.data-v-65f82fb0 {
+  font-size: 30rpx;
+}
+.payment-wrap .link-list.data-v-65f82fb0 {
+  margin: 22rpx 0;
+  border-radius: 10rpx;
+}
+.payment-wrap .link-list .link-item.data-v-65f82fb0 {
+  padding: 0 35rpx;
+  height: 120rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  background: #f54946;
+  border-radius: 10rpx;
+/*&:first-of-type*/
+/*  border-radius 10rpx 10rpx 0 0*/
+/*&:last-of-type*/
+/*  border-radius 0 0 10rpx 10rpx*/
+}
+.payment-wrap .link-list .link-item+.link-item.data-v-65f82fb0 {
+  border-top: 1px solid #ffc1c1;
+}
+.payment-wrap .link-list .link-item .item-icon.data-v-65f82fb0 {
+  margin-right: 20rpx;
+  width: 35rpx;
+  height: 34rpx;
+}
+.payment-wrap .link-list .link-item .item-icon.icon-pwd.data-v-65f82fb0 {
+  width: 34rpx;
+  height: 38rpx;
+}
+.data-v-65f82fb0 .van-popup {
+  height: 50%;
+  width: 100%;
+  padding-bottom: 60rpx;
+}
+.data-v-65f82fb0 .van-popup .popup-tit-box {
+  height: 108rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  padding-left: 28rpx;
+}
+.data-v-65f82fb0 .van-popup .pay-way-list {
+  margin-left: 28rpx;
+}
+.data-v-65f82fb0 .van-popup .pay-item {
+  height: 106rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  border-bottom: 1px solid #afafaf;
+  padding-right: 28rpx;
+}
+.data-v-65f82fb0 .van-popup .pay-item:first-of-type {
+  border-top: 1px solid #afafaf;
+}
+.data-v-65f82fb0 .van-popup .pay-item .item-icon {
+  width: 46rpx;
+  height: 46rpx;
+  margin-right: 15rpx;
+}
+.data-v-65f82fb0 .van-popup .pay-item.tips-item {
+  height: 86rox;
+  border: 0;
+  background: #ffdfdf;
+  padding-left: 28rpx;
+}
+

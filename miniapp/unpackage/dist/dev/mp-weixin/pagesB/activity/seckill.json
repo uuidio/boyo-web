@@ -1,0 +1,9 @@
+{
+  "navigationStyle": "custom",
+  "navigationBarTitleText": "秒杀活动",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "uni-countdown": "/node-modules/_@dcloudio_uni-ui@1.2.5@@dcloudio/uni-ui/lib/uni-count-down/uni-count-down",
+    "null-data": "/components/lists/nullData"
+  }
+}

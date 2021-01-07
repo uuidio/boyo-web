@@ -1,0 +1,16 @@
+{
+  "component": true,
+  "usingComponents": {
+    "swipers": "/components/editTemps/Swipers",
+    "grap-nav": "/components/editTemps/GrapNav",
+    "slide-nav": "/components/editTemps/SlideNav",
+    "custom-img": "/components/editTemps/CustomImg",
+    "good-group": "/components/editTemps/goodsGroup",
+    "goods-swiper": "/components/editTemps/goodsSwiper",
+    "title": "/components/editTemps/Title",
+    "activity-group": "/components/editTemps/activityGroup",
+    "tetris": "/components/editTemps/Tetris",
+    "special": "/components/editTemps/Special",
+    "group-temp": "/components/editTemps/GroupTemp"
+  }
+}

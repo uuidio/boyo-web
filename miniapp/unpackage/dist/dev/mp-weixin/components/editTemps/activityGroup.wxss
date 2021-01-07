@@ -1,0 +1,94 @@
+.activity-list.data-v-254172eb {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.activity-list .activity-item.data-v-254172eb {
+  width: 49%;
+  padding: 24rpx 16rpx;
+  box-sizing: border-box;
+}
+.activity-list .activity-item+.activity-item.data-v-254172eb {
+  margin-left: 2%;
+}
+.activity-list .activity-item .main-tit-box.data-v-254172eb {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.activity-list .activity-item .main-tit-box .main-tit.data-v-254172eb {
+  -webkit-flex-shrink: 0;
+          flex-shrink: 0;
+  font-size: 32rpx;
+  font-weight: bold;
+  line-height: 1;
+}
+.activity-list .activity-item .main-tit-box .count-down-box.data-v-254172eb {
+  text-align: center;
+/*width 128rpx*/
+  height: 36rpx;
+  line-height: 36rpx;
+  padding: 0 15rpx;
+  border: 1rpx solid #ff173e;
+  border-radius: 36rpx;
+  font-size: 24rpx;
+  font-weight: bold;
+  color: #ff173e;
+  margin-left: 16rpx;
+}
+.activity-list .activity-item .tit-box.data-v-254172eb {
+  font-size: 24rpx;
+  margin-top: 12rpx;
+  line-height: 1;
+}
+.activity-list .activity-item .goods-list.data-v-254172eb {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  margin-top: 12rpx;
+}
+.activity-list .activity-item .goods-list .goods-item.data-v-254172eb {
+  width: 49%;
+}
+.activity-list .activity-item .goods-list .goods-item+.goods-item.data-v-254172eb {
+  margin-left: 2%;
+}
+.activity-list .activity-item .goods-list .goods-item .img-box.data-v-254172eb {
+  width: 100%;
+  height: 0;
+  position: relative;
+  padding-top: 100%;
+  overflow: hidden;
+}
+.activity-list .activity-item .goods-list .goods-item .img-box image.data-v-254172eb {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.activity-list .activity-item .goods-list .goods-item .goods-price-box.data-v-254172eb {
+  text-align: center;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  color: #ff173e;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+          align-items: flex-end;
+  line-height: 1;
+  margin-top: 10rpx;
+}
+.activity-list .activity-item .goods-list .goods-item .goods-price-box .price-sign.data-v-254172eb {
+  font-size: 18rpx;
+}
+.activity-list .activity-item .goods-list .goods-item .goods-price-box .goods-price.data-v-254172eb {
+  font-size: 26rpx;
+}
+

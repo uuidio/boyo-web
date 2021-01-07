@@ -1,0 +1,1 @@
+<view class="data-v-5740b386"><view class="null-data data-v-5740b386" style="{{'background-color:'+(bgColor)+';'}}"><view class="box data-v-5740b386"><text class="iconfont icon-emoji data-v-5740b386" style="font-size:60px;"></text><view class="data-v-5740b386"><text class="data-v-5740b386">{{tip}}</text></view></view></view></view>

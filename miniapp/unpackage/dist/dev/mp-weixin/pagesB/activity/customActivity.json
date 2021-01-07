@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "自定义活动",
+  "usingComponents": {
+    "header": "/components/header/header",
+    "index-view": "/pagesB/activity/components/indexView"
+  }
+}
