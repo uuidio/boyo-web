@@ -44,7 +44,7 @@
       defaultImageList: Array,
       maximum: Number,
       shopId: Number,
-      tag_id: Number
+      tag_id: [String, Number]
     },
     data() {
       return {
@@ -123,7 +123,6 @@
       },
     },
     mounted() {
-      console.log(Server.action.upload_image);
       // this.uploadImageList = this.$refs.upload.fileList;
       this.upload_data = { tag_id: this.tag_id }
     },

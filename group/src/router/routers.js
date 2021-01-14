@@ -6,6 +6,7 @@ import shop from './modules/shop';
 import member from './modules/member';
 import settle from './modules/settle';
 import trade from './modules/trade';
+import desktop from './modules/desktop.js';
 // import promotion from './modules/promotion';
 import statistics from './modules/statistics';
 import site from './modules/site';
@@ -39,6 +40,7 @@ export const routers = [
       generalize,
       site,
       // wallet,//钱包管理
+      desktop,
       permission,
     ],
   },

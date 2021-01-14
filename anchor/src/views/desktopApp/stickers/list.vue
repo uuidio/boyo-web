@@ -12,8 +12,8 @@
       <a-table rowKey="created_at" :pagination="false" :columns="columns" :data-source="table_list">
         <span slot="action" slot-scope="text,record">
           <a-button type="primary" size="small" icon="edit" @click="open_aModel('编辑',record)">编辑</a-button>
-          <AlbumPics :isMultiple="true" :id="12" :maximum="1" @selectOk="selectPics" style="display:inline-block">
-            <a-button type="danger" size="small" icon="search"  style="margin-left: 10px;">查看相册</a-button>
+          <AlbumPics :tag_id="tag_id" :isMultiple="true" :id="12" :maximum="1" style="display:inline-block">
+            <a-button type="danger" size="small" icon="search"  style="margin-left: 10px;" @click="look_img(record)">查看相册</a-button>
           </AlbumPics>
           <a-button type="primary" size="small" icon="delete" @click="open_delete(record)" style="margin-left:10px;">删除</a-button>
         </span>
@@ -53,7 +53,7 @@ export default {
   },
   data() {
     return {
-      aModel_title: '新建分类',
+      aModel_title: '',
       uploadImageList: [], // 选中的图片
       rules: {
         name: [
@@ -99,7 +99,8 @@ export default {
       total: 0, // 总条数
       page_count: 0, // 总页数
       table_list: [],
-      spinning: false //加载
+      spinning: false, //加载
+      tag_id: '',
     };
   },
   methods: {
@@ -151,17 +152,10 @@ export default {
         this.aModel_title = '编辑分类';
       }
     },
-    // 选择图片
-    selectPics(pics) {
-      const _this = this;
-      pics.forEach((pic) => {
-        const imageItem = {
-          status: 'finished',
-          url: pic.pic_url,
-        };
-        _this.uploadImageList.push(imageItem);
-        _this.surplusNum--;
-      });
+    // // 选择图片
+    look_img(row) {
+      console.log(row);
+      this.tag_id = row.id
     },
     onSubmit() {
       const _this = this

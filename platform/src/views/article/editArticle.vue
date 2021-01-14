@@ -1,40 +1,16 @@
 <template>
   <div class="content">
-    <a-form
-      :form="form"
-    >
-      <a-form-item
-        label="标题"
-        :required="true"
-        :label-col="{ md: 3,xs:24 }"
-        :wrapper-col="{ md: 6,xs:24}"
-      >
-        <a-input v-model="formItem.title" placeholder="主标题">
-        </a-input>
+    <a-form :form="form">
+      <a-form-item label="标题" :required="true" :label-col="{ md: 3,xs:24 }" :wrapper-col="{ md: 6,xs:24}">
+        <a-input v-model="formItem.title" placeholder="主标题"></a-input>
       </a-form-item>
-      <a-form-item
-        label="副标题"
-        :label-col="{ md: 3,xs:24 }"
-        :wrapper-col="{ md: 6,xs:24}"
-      >
-        <a-textarea
-          placeholder="商品副标题"
-          :rows="4"
-          v-model="formItem.subtitle"
-        />
+      <a-form-item label="副标题" :label-col="{ md: 3,xs:24 }" :wrapper-col="{ md: 6,xs:24}">
+        <a-textarea placeholder="商品副标题" :rows="4" v-model="formItem.subtitle"/>
       </a-form-item>
-      <a-form-item
-        label="分类排序"
-        :label-col="{ md: 3,xs:24 }"
-        :wrapper-col="{ md: 6,xs:24}"
-      >
+      <a-form-item label="分类排序" :label-col="{ md: 3,xs:24 }" :wrapper-col="{ md: 6,xs:24}">
         <a-input v-model="formItem.listorder" placeholder="分类排序"/>
       </a-form-item>
-      <a-form-item
-        label="是否开启"
-        :label-col="{ md: 3,xs:24 }"
-        :wrapper-col="{ md: 6,xs:24}"
-      >
+      <a-form-item label="是否开启" :label-col="{ md: 3,xs:24 }" :wrapper-col="{ md: 6,xs:24}">
         <a-radio-group v-model="formItem.is_show" name="isShow" :defaultValue="0">
           <a-radio :value="0">关闭</a-radio>
           <a-radio :value="1">开启</a-radio>
@@ -151,30 +127,6 @@ export default {
       activityList: state => state.article.activityList,
       dataItem: state => state.article.dataItem,
     }),
-    // currentActivity () {
-    //   if (this.activityList.length > 0) {
-    //     if (this.dataItem.activity_id) {
-    //       for (let i = 0; i < this.activityList.length; i++) {
-    //         if (this.activityList[i].id === this.dataItem.activity_id) {
-    //           console.log(this.dataItem.activity_id, 333)
-    //           return this.activityList[i].title;
-    //         }
-    //       }
-    //     } else {
-    //       console.log(this.dataItem.activity_id, 333)
-    //       return this.activityList[0].title;
-    //     }
-    //   } else {
-    //     return '';
-    //   }
-    // },
-    // imageLists() {
-    //   if (this.dataItem.article_url) {
-    //     return [{ url: this.dataItem.article_url, status: 'finished' }];
-    //   } else {
-    //     return [];
-    //   }
-    // },
   },
   created() {
     if (this.$route.query.articleId) {

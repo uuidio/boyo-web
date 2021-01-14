@@ -15,7 +15,7 @@
       :format="['jpg','jpeg','png']"
       :max-size="2048"
     >
-      <a-button icon="upload" style="margin-right: 6px;">上传图片</a-button>
+      <a-button icon="upload" style="margin-right: 6px;margin-top:20px;">上传图片</a-button>
     </Upload>
     <AlbumPics :isMultiple=true :maximum=20 @selectOk="selectPics">
       <a-button icon="camera">相册选择</a-button>
@@ -108,7 +108,7 @@ export default {
       }
     },
     handleSuccess(res, file) {
-      if (res.errorcode === 0) {
+      if (res.code === 0) {
         this.insertPic(res.result.pic_url);
       } else {
         this.warn(res.message);

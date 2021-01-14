@@ -127,8 +127,6 @@ export default {
       const _this = this
       this.$refs.ruleForm.validate((valid) => {
         if (valid) {
-          console.log('oksdok');
-          console.log(_this.aModel_title);
           if (_this.aModel_title == '新建题词本') {
             _this.$http.post('v1/autocue/classify/add',_this.form_params).then((resData) => {
               if (resData.code === 0) {

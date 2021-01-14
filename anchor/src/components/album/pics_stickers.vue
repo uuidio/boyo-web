@@ -5,7 +5,6 @@
       <slot></slot>
     </div>
     <a-modal width="80%" title="相册图片" v-model="visible" @ok="selectPicsOk">
-
       <div class="selectImgBox">
         <ul>
           <li v-for="item in table_list" @click="selectPic(item)" :key="item.id" :class="{'active': isSelected(item)}">
@@ -22,7 +21,7 @@
       </div>
 <!--      页尾-->
       <template slot="footer">
-        <div style="display:inline-block;margin-right: 60px;"><UploadImage @get_table_list="get_table_list" :maximum="999" :tag_id="61"><a-button slot="button"> <a-icon type="upload" /> 上传图片 </a-button></UploadImage></div>
+        <div style="display:inline-block;margin-right: 60px;"><UploadImage @get_table_list="get_table_list" :maximum="999" :tag_id="tag_id"><a-button slot="button"> <a-icon type="upload" /> 上传图片 </a-button></UploadImage></div>
 <!--        <a-button type="prime" > 重命名</a-button>-->
         <a-button type="primary" @click="open_delete(selection)">删除</a-button>
         <a-button key="back" @click="visible = false"> 取消</a-button>
@@ -45,6 +44,7 @@ export default {
     isMultiple: Boolean,
     maximum: Number,
     shopId: Number,
+    tag_id: [String, Number],
   },
   data() {
     return {
@@ -60,7 +60,7 @@ export default {
       table_param: {
         page: 1, // 当前页面
         per_page: 20,
-        tag_id: 61,
+        tag_id: '',
       },
       total: 0, // 总条数
       page_count: 0, // 总页数
@@ -104,6 +104,9 @@ export default {
     get_table_list(page) {
       let _this = this;
       this.spinning = true
+      this.table_param.tag_id = this.tag_id
+      console.log(this.tag_id);
+      console.log(this.table_param);
       if(page){_this.table_param.page = page}
       this.$http.get('v1/tag/image/list', _this.table_param).then((resData) => {
         if (resData.code === 0) {

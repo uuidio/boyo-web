@@ -6,6 +6,8 @@ import VCharts from 'v-charts';
 import Antd from 'ant-design-vue';
 import 'ant-design-vue/dist/antd.less'; // or 'ant-design-vue/dist/antd.less'
 import '@styles/common.css';
+import $http from  './api/http'
+import $fetch from  './api/fetch'
 import {
   DEFAULT_COLOR,
   DEFAULT_THEME,
@@ -24,6 +26,7 @@ import echarts from 'echarts';
 import store from './store';
 import router from './router';
 import App from './App.vue';
+import global from './utils/global.js';
 
 // Vue.use(VueAMap);
 // VueAMap.initAMapApiLoader({
@@ -32,10 +35,11 @@ import App from './App.vue';
 //   v: '1.4.4',
 //   uiVersion: '1.0.11',
 // });
-
+Vue.prototype.$http = $http
+Vue.prototype.$fetch = $fetch
 Vue.prototype.$echarts = echarts; // 将echarts存到Vue原型中
 Vue.config.productionTip = false;
-
+Vue.use(global);
 Vue.use(Storage, config.storageOptions);
 Vue.use(Antd);
 Vue.use(router);
