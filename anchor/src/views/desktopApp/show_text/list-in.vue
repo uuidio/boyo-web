@@ -75,7 +75,7 @@ export default {
       aModel_title: '',
       columns: [
         {
-          title: '笔记本名称',
+          title: '笔记标题',
           dataIndex: 'title',
           key: 'title',
 

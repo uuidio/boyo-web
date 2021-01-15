@@ -53,7 +53,7 @@ export default {
       },
       columns: [
         {title: '标题', dataIndex: 'classify_name', key: 'classify_name',},
-        {title: '笔记本数量', dataIndex: 'count', key: 'count',},
+        {title: '笔记数量', dataIndex: 'count', key: 'count',},
         {title: '创建时间', dataIndex: 'created_at', key: 'created_at',},
         {title: '操作', key: 'action', dataIndex: 'action', scopedSlots: { customRender: 'action' },fixed: 'right',}
       ],
