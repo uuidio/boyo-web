@@ -18,10 +18,8 @@
           </router-link>
         </a-menu-item>
         <a-menu-item key="1">
-          <router-link to="/shop/setting/resetPass">
             <a-icon type="setting"/>
-            <span>修改密码</span>
-          </router-link>
+            <span @click="register_logout()">修改密码</span>
         </a-menu-item>
         <!--<a-menu-item key="2" disabled>-->
           <!--<a-icon type="setting"/>-->
@@ -41,8 +39,8 @@
 <script>
 import { USER_INFO } from '@/store/mutation-types';
 import { mapActions } from 'vuex';
+import Cookies from 'js-cookie';
 import HeaderNotice from './HeaderNotice';
-import Cookies from "js-cookie";
 
 export default {
   name: 'UserMenu',
@@ -50,24 +48,48 @@ export default {
     HeaderNotice,
   },
   mounted() {
-      this.userInfo()
+    this.userInfo();
   },
   data() {
     return {
-      name:'管理员',
-      shopname:''
+      name: '管理员',
+      shopname: '',
     };
   },
   methods: {
     ...mapActions({
-      memberlogout:'user/memberlogout'
+      memberlogout: 'user/memberlogout',
     }),
-    userInfo(){
-      const info = JSON.parse(Cookies.get(USER_INFO))
+    userInfo() {
+      const info = JSON.parse(Cookies.get(USER_INFO));
       this.name = info.username;
       if (info.shopname) {
         this.shopname = info.shopname;
       }
+    },
+    register_logout() {
+      const that = this;
+
+      this.$confirm({
+        title: '提示',
+        content: '真的要注销登录去修改密码吗 ?',
+        onOk() {
+          that.$router.push('/passport/reset_password');
+          that.memberlogout();
+          // return that.Logout({})
+          //   .then(() => {
+          //     window.location.reload();
+          //   })
+          //   .catch((err) => {
+          //     that.$message.error({
+          //       title: '错误',
+          //       description: err.message,
+          //     });
+          //   });
+        },
+        onCancel() {
+        },
+      });
     },
     handleLogout() {
       const that = this;
@@ -76,7 +98,7 @@ export default {
         title: '提示',
         content: '真的要注销登录吗 ?',
         onOk() {
-          that.memberlogout()
+          that.memberlogout();
           // return that.Logout({})
           //   .then(() => {
           //     window.location.reload();

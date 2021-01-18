@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <a-form-model ref="ruleForm" :model="form_params" :rules="rules">
-      <a-form-model-item prop="company">
+      <a-form-model-item>
         <a-input v-model="form_params.company" placeholder="请输入公司名称" size="large">
           <a-icon slot="prefix" type="bank" :style="{ color: 'rgba(0,0,0,.25)' }"/>
         </a-input>
@@ -78,7 +78,7 @@ export default {
 
       },
       send_button: '发送验证码',
-      send_button_time: 30,
+      send_button_time: 120,
       time_loop: '',
       send_button_disable: false,
     };
@@ -99,7 +99,7 @@ export default {
           // }
           _this.time_loop = setInterval(() => {
             if ( _this.send_button_time==0 ) {
-              _this.send_button_time = 30
+              _this.send_button_time = 120
               _this.send_button = '发送验证码'
               _this.send_button_disable = false
               clearInterval(_this.time_loop)
@@ -146,16 +146,6 @@ export default {
             });
           }
         });
-    },
-    onSubmit() {
-      this.$refs.ruleForm.validate(valid => {
-        if (valid) {
-          alert('submit!');
-        } else {
-          console.log('error submit!!');
-          return false;
-        }
-      });
     },
     handleChange(e) {
       this.checkNick = e.target.checked;

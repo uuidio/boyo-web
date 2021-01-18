@@ -58,6 +58,15 @@ export default {
         hideInMenu: true,
       },
     },
+    {
+      path: '/project/anchor/list',
+      name: 'anchor_list',
+      component: () => import('@/views/project/anchor/list'),
+      meta: {
+        auth: true,
+        title: '主播账号列表',
+      },
+    },
     // {
     //   path: '/project/paymentType/paymentTypeList',
     //   name: 'paymentTypeList',
