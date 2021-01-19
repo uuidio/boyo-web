@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import Storage from 'vue-ls';
+import 'element-ui/lib/theme-chalk/index.css';
 import 'iview/dist/styles/iview.css';
 import './permission';
 import VCharts from 'v-charts';
