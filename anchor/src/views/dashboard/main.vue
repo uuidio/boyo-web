@@ -1,6 +1,29 @@
 <template>
  <div>
-   <div style="font-size:20px">敬请期待...</div>
+   <div style="font-size:20px">
+     <a-row class="one_row" :gutter="[16,16]">
+       <a-col :md="5" :xs="24">
+          <div style="background-color: #6cbaf8;background: linear-gradient(145deg,#7ee1f9,#6cbaf8)">
+            <img src="~@/assets/images/hot.png" alt="" style="">
+            <span style="position: absolute;right: 0px;top: 7px;transform:rotate(45deg);font-size: 17px;">素材</span>
+            <p style="font-size: 30px;line-height: 150px;text-align: center;">{{total_count2}} <span style="font-size: 20px;display: inline-block;margin-left: 10px">类</span></p>
+          </div>
+       </a-col>
+       <a-col :md="5" :xs="24">
+         <div style="background-color: #b376ff;background: linear-gradient(145deg,#44aaf8,#b376ff);">
+           <img src="~@/assets/images/hot.png" alt="" style="">
+           <span style="position: absolute;right: 7px;top: 5px;transform:rotate(45deg);;color:#fff;font-size: 17px;">词</span>
+           <p style="font-size: 30px;line-height: 150px;text-align: center;">{{total_count1}} <span style="font-size: 20px;display: inline-block;margin-left: 10px">本</span></p>
+         </div>
+       </a-col>
+       <a-col :md="5" :xs="24">
+
+       </a-col>
+     </a-row>
+   </div>
+   <div>
+
+   </div>
    <div v-show="false" class="content" v-if="show">
      <div class="mb20">
        <div class="title_h4">
@@ -84,7 +107,14 @@
         formItem:{
           timeType:'yesterday'
         },
-        show:false
+        show:false,
+        // 列表相关的代码------------------------------------------------------------------------------
+        table_param: {
+          page: 1, //当前页面
+          per_page: 10,
+        },
+        total_count1: 0, // 总条数
+        total_count2: 0, // 总条数
       };
     },
     methods: {
@@ -105,15 +135,37 @@
           this.currentTime()
           this.show=true
         }
-      }
+      },
+      // 获取表格列表
+      get_table_list(page) {
+        let _this = this;
+        this.spinning = true
+        if(page){_this.table_param.page = page}
+        this.$http.get('v1/autocue/classify/list', _this.table_param).then((resData) => {
+          if (resData.code === 0) {
+            _this.total_count1 = resData.result.lists.total
+          }
+        });
+        _this.$http.get('v1/tag/list', _this.table_param).then((resData) => {
+          _this.spinning = false
+          if (resData.code === 0) {
+            _this.total_count2 = resData.result.lists.total
+          }
+        });
+      },
     },
     mounted() {
       // this.getUser()
-
+      this.get_table_list()
     },
   };
 </script>
 <style scoped lang="stylus">
 >>>.ant-row>div
     margin-bottom 20px
+.one_row>div>div
+ height: 150px;border-radius:10px;position: relative;color: #fff
+.one_row>div>div>img
+ position: absolute;right: 0;top: 0;
+
 </style>

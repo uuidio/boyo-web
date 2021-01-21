@@ -30,28 +30,28 @@
           <a-input v-model="form_params.title" placeholder="请输入公告标题"></a-input>
         </a-form-model-item>
         <a-form-model-item label="公告内容:" :label-col="{ md: 3,xs:24 }" :wrapper-col="{ md: 6,xs:24}" prop="content">
-          <a-textarea v-model="form_params.content" placeholder="请输入文章内容" :rows="4" />
+          <a-textarea v-model="form_params.notice" placeholder="请输入文章内容" :rows="4" />
         </a-form-model-item>
         <a-form-model-item label="公告图片:" :label-col="{ md: 3,xs:24 }" :wrapper-col="{ md: 6,xs:24}">
           <el-upload @handleAvatarSuccess="handleAvatarSuccess" :option="option"></el-upload>
           <div><a-icon type="info-circle" /> <span> 请上传小于1m，宽度不大于700px图片</span></div>
         </a-form-model-item>
         <div v-if="form_params.img">
-          <a-form-model-item label="图片位置:" :label-col="{ md: 3,xs:24 }" :wrapper-col="{ md: 6,xs:24}" prop="position" >
-            <a-select v-model="form_params.position" placeholder="请选择">
-              <a-select-option :value="0">顶部左侧</a-select-option>
-              <a-select-option :value="1">顶部居中</a-select-option>
-              <a-select-option :value="2">顶部右侧</a-select-option>
-              <a-select-option :value="3">底部左侧</a-select-option>
-              <a-select-option :value="4">底部居中</a-select-option>
-              <a-select-option :value="5">底部右侧</a-select-option>
-            </a-select>
-          </a-form-model-item>
-          <a-form-model-item label="图片宽比例:" :label-col="{ md: 3,xs:24 }" :wrapper-col="{ md: 6,xs:24}" prop="size">
-            <a-input v-model.number="form_params.size" placeholder="请输入0~100整数"></a-input>
-            <span style="position: absolute;right: 11px;top:-10px;">%</span>
-            <span style="position: absolute;right: -169px;top:-10px;"><a-icon type="info-circle" /> <span> 设置为0则默认原大小</span></span>
-          </a-form-model-item>
+        <a-form-model-item label="图片位置:" :label-col="{ md: 3,xs:24 }" :wrapper-col="{ md: 6,xs:24}" prop="location" >
+          <a-select v-model="form_params.location" placeholder="请选择">
+            <a-select-option :value="0">顶部左侧</a-select-option>
+            <a-select-option :value="1">顶部居中</a-select-option>
+            <a-select-option :value="2">顶部右侧</a-select-option>
+            <a-select-option :value="3">底部左侧</a-select-option>
+            <a-select-option :value="4">底部居中</a-select-option>
+            <a-select-option :value="5">底部右侧</a-select-option>
+          </a-select>
+        </a-form-model-item>
+        <a-form-model-item label="图片宽比例:" :label-col="{ md: 3,xs:24 }" :wrapper-col="{ md: 6,xs:24}" prop="wide_ratio">
+          <a-input v-model.number="form_params.wide_ratio" placeholder="请输入0~100整数"></a-input>
+          <span style="position: absolute;right: 11px;top:-10px;">%</span>
+          <span style="position: absolute;right: -169px;top:-10px;"><a-icon type="info-circle" /> <span> 设置为0则默认原大小</span></span>
+        </a-form-model-item>
         </div>
       </a-form-model>
     </a-modal>
@@ -76,10 +76,10 @@ export default {
     return {
       option: {
         size: 1,
-        fn(img, valid) {
+        fn(img,valid) {
           valid = img.width <= 600;
-          console.log(img.width);
-          console.log(valid);
+            console.log(img.width);
+            console.log(valid);
         },
         msg1: '上传的图片最大为600x',
       },
@@ -117,22 +117,22 @@ export default {
       form_params: {
         id: '',
         title: '', // 名称
-        content: '', // 内容
+        notice: '', // 内容
         img: '',
-        position: undefined,
-        size: 0,
+        location: undefined,
+        wide_ratio: 0,
       },
       rules: {
         title: [
           { required: true, message: '请输文章标题', trigger: 'blur' },
         ],
-        content: [
+        notice: [
           { required: true, message: '必填', trigger: 'blur' },
         ],
-        position: [
+        location: [
           { required: true, message: '请选择位置', trigger: 'change' },
         ],
-        size: [
+        wide_ratio: [
           { required: true, message: '必填', trigger: 'blur' },
           {
             type: 'integer', min: 0, max: 100, message: '请填0~100内的整数', trigger: 'blur',
@@ -223,11 +223,11 @@ export default {
 </script>
 
 <style scoped>
-  .list-nav {
-    display: flex;
-    justify-content: space-between;
-  }
-  .list-nav button {
-    margin-right: 20px;
-  }
+.list-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.list-nav button {
+  margin-right: 20px;
+}
 </style>
