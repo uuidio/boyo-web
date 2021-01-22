@@ -48,5 +48,10 @@ export default {
         },
       });
     };
+    Vue.prototype.get_suffix = function (file_name) {
+      const filename = file_name;
+      const type = file_name.substring(filename.lastIndexOf("."),filename.length);
+      return type;
+    }
   },
 };

@@ -39,12 +39,12 @@
         <div v-if="form_params.img">
         <a-form-model-item label="图片位置:" :label-col="{ md: 3,xs:24 }" :wrapper-col="{ md: 6,xs:24}" prop="location" >
           <a-select v-model="form_params.location" placeholder="请选择">
-            <a-select-option :value="0">顶部左侧</a-select-option>
-            <a-select-option :value="1">顶部居中</a-select-option>
-            <a-select-option :value="2">顶部右侧</a-select-option>
-            <a-select-option :value="3">底部左侧</a-select-option>
+<!--            <a-select-option :value="0">顶部左侧</a-select-option>-->
+<!--            <a-select-option :value="1">顶部居中</a-select-option>-->
+<!--            <a-select-option :value="2">顶部右侧</a-select-option>-->
+<!--            <a-select-option :value="3">底部左侧</a-select-option>-->
             <a-select-option :value="4">底部居中</a-select-option>
-            <a-select-option :value="5">底部右侧</a-select-option>
+<!--            <a-select-option :value="5">底部右侧</a-select-option>-->
           </a-select>
         </a-form-model-item>
         <a-form-model-item label="图片宽比例:" :label-col="{ md: 3,xs:24 }" :wrapper-col="{ md: 6,xs:24}" prop="wide_ratio">
@@ -119,7 +119,7 @@ export default {
         title: '', // 名称
         notice: '', // 内容
         img: '',
-        location: undefined,
+        location: 4,
         wide_ratio: 0,
       },
       rules: {

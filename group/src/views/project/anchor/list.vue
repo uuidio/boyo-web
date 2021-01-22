@@ -135,7 +135,7 @@ export default {
           key: 'b6',
         },
         {
-          title: '过期时间',
+          title: '有效期',
           dataIndex: 'b7',
           key: 'b7',
         },

@@ -1,16 +1,6 @@
 <template>
   <div class="main">
     <a-form-model ref="ruleForm" :model="form_params" :rules="rules">
-      <a-form-model-item>
-        <a-input v-model="form_params.company" placeholder="请输入公司名称" size="large">
-          <a-icon slot="prefix" type="bank" :style="{ color: 'rgba(0,0,0,.25)' }"/>
-        </a-input>
-      </a-form-model-item>
-      <a-form-model-item prop="username">
-        <a-input v-model="form_params.username" placeholder="请输入用户名" size="large">
-          <a-icon slot="prefix" type="user" :style="{ color: 'rgba(0,0,0,.25)' }"/>
-        </a-input>
-      </a-form-model-item>
       <a-form-model-item prop="mobile">
         <a-input v-model="form_params.mobile" placeholder="请输入手机号" size="large" @change="mobile_change">
           <a-icon slot="prefix" type="phone" :style="{ color: 'rgba(0,0,0,.25)' }"/>
@@ -28,13 +18,13 @@
         </a-form-item>
       </a-form-model-item>
       <a-form-model-item prop="password" stye="margin-top:-20px;">
-        <a-input-password v-model="form_params.password" size="large" type="password" autocomplete="false" placeholder="请输入密码">
+        <a-input-password v-model="form_params.password" size="large" type="password" autocomplete="false" placeholder="请输入新密码">
           <a-icon slot="prefix" type="lock" :style="{ color: 'rgba(0,0,0,.25)' }"/>
         </a-input-password>
       </a-form-model-item>
       <a-form-model-item>
         <a-button type="primary" @click="onSubmit" style="width:100%;" size="large">
-          点击注册
+          修改密码
         </a-button>
       </a-form-model-item>
     </a-form-model>
@@ -120,9 +110,9 @@
         const _this = this
         this.$refs.ruleForm.validate((valid) => {
           if (valid) {
-            _this.$http.post('v1/anchor/register',_this.form_params).then((resData) => {
+            _this.$http.post('v1/anchor/resetPwd',_this.form_params).then((resData) => {
               if (resData.code === 0) {
-                _this.Ok('注册成功,即将跳转...')
+                _this.ok('修改成功,即将跳转...')
                 setTimeout(()=>{
                   _this.$router.push('/passport/Login')
                 },1000)

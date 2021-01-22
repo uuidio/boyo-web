@@ -20,16 +20,6 @@ export default {
       },
     },
     {
-      path: '/notice/detail',
-      name: 'notice_detail',
-      component: () => import('@/views/desktopApp/notice/notice_detail'),
-      meta: {
-        auth: true,
-        title: '操作公告',
-        hideInMenu: true,
-      },
-    },
-    {
       path: '/version/list',
       name: 'version_list',
       component: () => import('@/views/desktopApp/version/list'),
@@ -38,5 +28,14 @@ export default {
         title: '版本管理',
       },
     },
+    // {
+    //   path: '/version/list2',
+    //   name: 'version_list',
+    //   component: () => import('@/views/desktopApp/version/list2'),
+    //   meta: {
+    //     auth: true,
+    //     title: '版本管理',
+    //   },
+    // },
   ],
 };

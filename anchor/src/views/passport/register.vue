@@ -6,13 +6,13 @@
           <a-icon slot="prefix" type="bank" :style="{ color: 'rgba(0,0,0,.25)' }"/>
         </a-input>
       </a-form-model-item>
-      <a-form-model-item prop="username">
-        <a-input v-model="form_params.username" placeholder="请输入用户名" size="large">
+      <a-form-model-item prop="login_account">
+        <a-input v-model="form_params.login_account" placeholder="请输入用户名" size="large">
           <a-icon slot="prefix" type="user" :style="{ color: 'rgba(0,0,0,.25)' }"/>
         </a-input>
       </a-form-model-item>
       <a-form-model-item prop="mobile">
-        <a-input v-model="form_params.mobile" placeholder="请输入手机号" size="large" @change="mobile_change">
+        <a-input v-model="form_params.mobile" placeholder="请输入手机号" size="large">
           <a-icon slot="prefix" type="phone" :style="{ color: 'rgba(0,0,0,.25)' }"/>
         </a-input>
       </a-form-model-item>
@@ -34,7 +34,7 @@
       </a-form-model-item>
       <a-form-model-item>
         <a-button type="primary" @click="onSubmit" style="width:100%;" size="large">
-          点击注册
+          账号注册
         </a-button>
       </a-form-model-item>
     </a-form-model>
@@ -53,7 +53,6 @@ export default {
     return {
       form_params: {
         company: '',
-        username: '',
         login_account: '',
         mobile: '',
         code: '',
@@ -63,7 +62,7 @@ export default {
         company: [
           { required: true, message: '请输入公司名称', trigger: 'blur' },
         ],
-        username: [
+        login_account: [
           { required: true, message: '请输入用户名', trigger: 'blur' },
         ],
         mobile: [
@@ -88,9 +87,6 @@ export default {
   created() {
   },
   methods: {
-    mobile_change() {
-      this.form_params.login_account = this.form_params.mobile
-    },
     send_code() {
       const _this = this
       if(!(/^1[3456789]\d{9}$/.test(this.form_params.mobile))){
@@ -122,7 +118,7 @@ export default {
         if (valid) {
           _this.$http.post('v1/anchor/register',_this.form_params).then((resData) => {
             if (resData.code === 0) {
-              _this.Ok('注册成功,即将跳转...')
+              _this.ok('修改成功,即将跳转...')
               setTimeout(()=>{
                 _this.$router.push('/passport/Login')
               },1000)
