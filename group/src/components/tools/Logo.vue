@@ -12,7 +12,7 @@ export default {
   props: {
     title: {
       type: String,
-      default: '极汇GO平台端',
+      default: '播丫平台端',
       required: false,
     },
     showTitle: {

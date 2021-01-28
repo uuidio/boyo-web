@@ -111,7 +111,7 @@ export default {
     //     obj:this.items
     //   })
     //     .then((res) => {
-    //       // console.log('平台账号列表',res);
+    //       // console.log('品牌账号列表',res);
     //         if (res.data.code === 0) {
     //       this.listField=res.data.result.field;
     //       this.listField[2].scopedSlots= { customRender: 'status' }

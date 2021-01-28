@@ -16,4 +16,4 @@ export const setDocumentTitle = function (title) {
   }
 };
 
-export const domTitle = '极汇GO门店';
+export const domTitle = '播丫门店';

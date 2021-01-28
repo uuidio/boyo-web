@@ -267,9 +267,9 @@ export default {
     setItems: 'v1/siteConfig/add_v1',
     // 平台
     platformUpdate: 'v1/platform/update', // 平台编辑
-    platformAdd: 'v1/platform/add', // 平台添加
-    platformLists: 'v1/platform/lists', // 平台列表
-    platformAct: 'v1/platform/act', // 平台列表
+    platformAdd: 'v1/platform/add', // 品牌添加
+    platformLists: 'v1/platform/lists', // 品牌列表
+    platformAct: 'v1/platform/act', // 品牌列表
     platformDetail: 'v1/platform/detail/', //
     platformEdit: 'v1/platform/update-point', // 更新积分设置
     platformListorder: 'v1/platform/listorder', // 更新权重
@@ -278,7 +278,7 @@ export default {
     // 平台账号
     adminuserEdit: 'v1/adminuser/resetPwd', // 平台账号密码编辑
     adminuserAdd: 'v1/adminuser/add', // 平台账号添加
-    adminuserLists: 'v1/adminuser/lists', // 平台账号列表
+    adminuserLists: 'v1/adminuser/lists', // 品牌账号列表
     adminuserSwitch: 'v1/adminuser/switch', // 平台账户开关
 
     /**

@@ -35,7 +35,6 @@ export default {
       },
       loading: false,
       fileList: [],
-      apk_name: '11.apk',
     };
   },
   methods: {
@@ -47,13 +46,14 @@ export default {
       } else {
         this.ok('上传成功');
         console.log(res.result);
-        this.$emit('handleAvatarSuccess', res.result, file.name);
+        this.$emit('handleAvatarSuccess', res.result, this.get_suffix(file.name,'pre'));
       }
     },
     // 上传之前判断
     beforeAvatarUpload(file) {
       const _this = this;
-      const isJPG = (this.get_suffix(file.name) === '.apk');
+      console.log(this.get_suffix(file.name, 'last'));
+      const isJPG = (this.get_suffix(file.name,'last') === '.apk');
       if (!isJPG) {
         this.$message.error('上传图片只能是 apk文件!');
         return false;

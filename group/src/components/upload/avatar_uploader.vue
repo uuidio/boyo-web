@@ -9,7 +9,7 @@
                 :show-file-list="false"
                 :on-success="handleAvatarSuccess"
                 :before-upload="beforeAvatarUpload">
-            <img v-if="imgUrl" :src="imgUrl" class="avatar">
+            <img v-if="form_params.img" :src="form_params.img" class="avatar">
             <i v-else class="el-icon-plus avatar-uploader-icon"></i>
         </Upload>
     </div>
@@ -26,6 +26,7 @@ export default {
   },
   props: {
     option: Object,
+    form_params: Object,
   },
   data() {
     return {

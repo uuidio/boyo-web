@@ -5,11 +5,11 @@
         <div class="header">
           <a href="/">
             <img src="~@/assets/logo.svg" class="logo" alt="logo">
-            <span class="title">极汇品牌管理</span>
+            <span class="title">播丫直播品牌管理</span>
           </a>
         </div>
         <div class="desc">
-          极汇品牌管理
+          播丫直播品牌管理
         </div>
       </div>
       <route-view></route-view>

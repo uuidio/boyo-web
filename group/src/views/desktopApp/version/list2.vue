@@ -9,7 +9,7 @@
           </UploadImage>
           <a-button size="large" type="danger" @click="download" style="float: right;margin-top:10px"><a-icon type="download" />下载当前包</a-button>
         </div>
-        <div style="margin-top:15px;"><a-icon type="bulb" /> 命名规则建议为V + 版本号_ + D + 日期_（如：V1_01_03D2021_01_14.apk）</div>
+        <div style="margin-top:15px;"><a-icon type="bulb" /> 命名规则建议为V + 版本号 + D + 日期（如：V1_01_03D2021_01_14.apk）</div>
       </template>
     </a-result>
   </div>

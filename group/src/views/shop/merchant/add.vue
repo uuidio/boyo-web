@@ -21,7 +21,7 @@
         <a-select :disabled="id!==0" placeholder="请输入店铺账号" v-model="formItem.seller_name">
           <a-select-option :value="item.username" v-for="(item,index) in accountList" :key="index">{{item.username}}</a-select-option>
         </a-select>
-        <p><span class="col-red">*</span>商家账号指商家自己注册或者平台添加的商家账号</p>
+        <p><span class="col-red">*</span>商家账号指商家自己注册或者品牌添加的商家账号</p>
       </a-form-item>
       <a-form-item
         label="店铺场地类型"

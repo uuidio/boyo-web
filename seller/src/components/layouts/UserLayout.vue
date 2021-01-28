@@ -5,11 +5,11 @@
         <div class="header">
           <a href="/">
             <img src="~@/assets/logo.svg" class="logo" alt="logo">
-            <span class="title">极汇GO门店管理</span>
+            <span class="title">播丫直播门店管理</span>
           </a>
         </div>
         <div class="desc">
-          极汇GO门店后台管理系统
+          播丫门店后台管理系统
         </div>
       </div>
       <route-view></route-view>

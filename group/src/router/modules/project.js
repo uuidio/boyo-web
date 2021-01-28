@@ -16,7 +16,7 @@ export default {
       component: () => import('@/views/project/platform/lists'),
       meta: {
         auth: true,
-        title: '平台列表',
+        title: '品牌列表',
       },
     },
     {
@@ -25,7 +25,7 @@ export default {
       component: () => import('@/views/project/platform/add'),
       meta: {
         auth: true,
-        title: '平台添加',
+        title: '品牌添加',
         hideInMenu: true,
       },
     },
@@ -45,7 +45,7 @@ export default {
       component: () => import('@/views/project/adminuser/lists'),
       meta: {
         auth: true,
-        title: '平台账号列表',
+        title: '品牌账号列表',
       },
     },
     {

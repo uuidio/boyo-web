@@ -28,12 +28,12 @@
       <a-form-model ref="ruleForm" :model="form_params" :rules="rules">
         <a-form-model-item label="版本号:" :label-col="{ md: 3,xs:24 }" :wrapper-col="{ md: 6,xs:24}" prop="versions">
           <a-input v-model="form_params.versions" placeholder="请输入版本号"></a-input>
-          <span style="position: absolute;right: -502px;top:-10px;"><a-icon type="info-circle" /> <span> 命名规则建议为V + 版本号_ + D + 日期_（如：V1.01.03D2021.01.14）</span></span>
+          <span style="position: absolute;right: -502px;top:-10px;"><a-icon type="info-circle" /> <span> 命名规则建议为V + 版本号 + D + 日期（如：V1.01.03D2021.01.14）</span></span>
         </a-form-model-item>
         <a-form-model-item label="版本更新说明:" :label-col="{ md: 3,xs:24 }" :wrapper-col="{ md: 6,xs:24}" prop="content">
           <a-textarea v-model="form_params.content" placeholder="请输入文章内容" :rows="4" />
         </a-form-model-item>
-        <a-form-model-item label="apk文件:" :label-col="{ md: 3,xs:24 }" :wrapper-col="{ md: 6,xs:24}" prop="url">
+        <a-form-model-item v-show="aModel_title=='发布版本'" label="apk文件:" :label-col="{ md: 3,xs:24 }" :wrapper-col="{ md: 6,xs:24}" prop="url">
           <el-upload v-if="!form_params.url" @clear_file="clear_file" @handleAvatarSuccess="handleAvatarSuccess" :option="option" :form_params="form_params"></el-upload>
           <div v-if="form_params.url"><span >{{file_name}}</span> <a-button style="margin-left:10px" size="small" @click="clear_file" shape="circle" theme="twoTone" icon="delete" /></div>
         </a-form-model-item>
@@ -57,7 +57,7 @@ export default {
   },
   data() {
     return {
-      file_name: '11.apk',
+      file_name: '',
       option: {
         url: 'v1/upload/apk',
         name: 'apk',
@@ -68,8 +68,8 @@ export default {
       columns: [
         {
           title: '版本号',
-          dataIndex: 'title',
-          key: 'title',
+          dataIndex: 'versions',
+          key: 'versions',
         },
         {
           title: '发布日期',
@@ -134,6 +134,7 @@ export default {
     handleAvatarSuccess(url,name) {
       this.form_params.url = url;
       this.file_name = name
+      this.form_params.versions = name;
     },
     // 打开弹框
     open_aModel(type, row) {
@@ -156,7 +157,7 @@ export default {
       const _this = this;
       _this.spinning = true;
       if (page) { _this.table_param.page = page; }
-      _this.$http.get('v1/versions/list', _this.table_param).then((resData) => {
+      _this.$http.get('v1/apk/list', _this.table_param).then((resData) => {
         _this.spinning = false;
         if (resData.code === 0) {
           _this.table_list = resData.result.lists.data;

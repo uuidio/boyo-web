@@ -12,7 +12,7 @@ export default {
   props: {
     title: {
       type: String,
-      default: '极汇GO门店端',
+      default: '播丫门店端',
       required: false,
     },
     showTitle: {

@@ -1,24 +1,24 @@
 <template>
     <div class="content">
         <a-form-item
-        label="平台项目名称"
+        label="品牌项目名称"
         :label-col="{ md: 4,xs:24 }"
         :wrapper-col="{ md: 7,xs:24}"
         :required="true"
       >
-        <a-input  v-model="detail.platform_name" placeholder="请输入平台项目名称"/>
+        <a-input  v-model="detail.platform_name" placeholder="请输入品牌项目名称"/>
       </a-form-item>
       <a-form-item
-        label="平台账号"
+        label="品牌账号"
         :label-col="{ md: 4,xs:24 }"
         :wrapper-col="{ md: 7,xs:24}"
         :required="true"
       >
         <!--<a-input v-model="formItem.seller_name" placeholder="请输入店铺账号"/>-->
-        <a-select :disabled="id!==0" placeholder="请输入平台账号" v-model="detail.admin_id" style="width:200px">
+        <a-select :disabled="id!==0" placeholder="请选择品牌账号" v-model="detail.admin_id" style="width:200px">
           <a-select-option :value="item.id" v-for="(item,index) in accountList" :key="index">{{item.username}}</a-select-option>
         </a-select>
-        <p><span class="col-red">*</span>平台账号指商家自己注册或者平台添加的平台账号</p>
+        <p><span class="col-red">*</span>品牌账号指商家自己注册或者品牌添加的品牌账号</p>
       </a-form-item>
 <!--      <a-form-item
             label="平台项目类型"
@@ -194,7 +194,7 @@ export default {
       confirmSltAddr: '',
       formItem: {
         platform_name: '',
-        admin_id: '',
+        admin_id: undefined,
         address: '',
         type: 'normal',
         longitude: '', // 经度

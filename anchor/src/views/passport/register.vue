@@ -33,7 +33,7 @@
         </a-input-password>
       </a-form-model-item>
       <a-form-model-item>
-        <a-button type="primary" @click="onSubmit" style="width:100%;" size="large">
+        <a-button type="primary" @click="onSubmit('注册')" style="width:100%;" size="large">
           点击注册
         </a-button>
       </a-form-model-item>
@@ -44,124 +44,125 @@
   </div>
 </template>
 <script>
-  import http from '@/api/http';
-  import Server from '@/config/server';
-  import { setAccessToken, setUserInfo } from '@/utils/util';
-  import {regular, validateOrder} from '@/components/tools/validate.js'
-  export default {
-    data() {
-      return {
-        form_params: {
-          company: '',
-          username: '',
-          login_account: '',
-          mobile: '',
-          code: '',
-          password: '',
-        },
-        rules: {
-          company: [
-            { required: true, message: '请输入公司名称', trigger: 'blur' },
-          ],
-          username: [
-            { required: true, message: '请输入用户名', trigger: 'blur' },
-          ],
-          mobile: [
-            { required: true, message: '请输入手机号' },
-            { pattern: /^1[3456789]\d{9}$/, message: '请输入正确手机号' },
-          ],
-          code: [
-            { required: true, message: '请输入验证码', trigger: 'blur' },
-          ],
-          password: [
-            { required: true, message: '请输入密码', trigger: 'blur' },
-          ],
+import http from '@/api/http';
+import Server from '@/config/server';
+import { setAccessToken, setUserInfo } from '@/utils/util';
+import { regular, validateOrder } from '@/components/tools/validate.js';
 
-        },
-        send_button: '发送验证码',
-        send_button_time: 120,
-        time_loop: '',
-        send_button_disable: false,
-      };
-    },
-    computed: {},
-    created() {
-    },
-    methods: {
-      mobile_change() {
-        this.form_params.login_account = this.form_params.mobile
+export default {
+  data() {
+    return {
+      current_type: '',
+      form_params: {
+        company: '',
+        username: '',
+        login_account: '',
+        mobile: '',
+        code: '',
+        password: '',
       },
-      send_code() {
-        const _this = this
-        if(!(/^1[3456789]\d{9}$/.test(this.form_params.mobile))){
-          this.xx('请填写正确手机号码')
-          return false;
-        } else {
-          _this.$http.post('v1/anchor/code',{mobile:_this.form_params.mobile}).then((resData) => {
-            // if (resData.code === 0) {
-            //
-            // }
-            _this.time_loop = setInterval(() => {
-              if ( _this.send_button_time==0 ) {
-                _this.send_button_time = 120
-                _this.send_button = '发送验证码'
-                _this.send_button_disable = false
-                clearInterval(_this.time_loop)
-              } else {
-                _this.send_button_time--
-                _this.send_button = _this.send_button_time + '秒'
-                _this.send_button_disable = true
-              }
-            },1000)
+      rules: {
+        company: [
+          { required: true, message: '请输入公司名称', trigger: 'blur' },
+        ],
+        username: [
+          { required: true, message: '请输入用户名', trigger: 'blur' },
+        ],
+        mobile: [
+          { required: true, message: '请输入手机号' },
+          { pattern: /^1[3456789]\d{9}$/, message: '请输入正确手机号' },
+        ],
+        code: [
+          { required: true, message: '请输入验证码', trigger: 'blur' },
+        ],
+        password: [
+          { required: true, message: '请输入密码', trigger: 'blur' },
+        ],
+
+      },
+      send_button: '发送验证码',
+      send_button_time: 120,
+      time_loop: '',
+      send_button_disable: false,
+    };
+  },
+  computed: {},
+  created() {
+  },
+  methods: {
+    mobile_change() {
+      this.form_params.login_account = this.form_params.mobile;
+    },
+    send_code() {
+      const _this = this;
+      if (!(/^1[3456789]\d{9}$/.test(this.form_params.mobile))) {
+        this.xx('请填写正确手机号码');
+        return false;
+      }
+      _this.$http.post('v1/anchor/code', { mobile: _this.form_params.mobile }).then((resData) => {
+        // if (resData.code === 0) {
+        //
+        // }
+        _this.time_loop = setInterval(() => {
+          if (_this.send_button_time == 0) {
+            _this.send_button_time = 120;
+            _this.send_button = '发送验证码';
+            _this.send_button_disable = false;
+            clearInterval(_this.time_loop);
+          } else {
+            _this.send_button_time--;
+            _this.send_button = `${_this.send_button_time}秒`;
+            _this.send_button_disable = true;
+          }
+        }, 1000);
+      });
+    },
+    onSubmit() {
+      const _this = this;
+      this.$refs.ruleForm.validate((valid) => {
+        if (valid) {
+          _this.$http.post('v1/anchor/register', _this.form_params).then((resData) => {
+            if (resData.code === 0) {
+              _this.ok('注册成功,即将跳转...');
+              setTimeout(() => {
+                _this.$router.push('/passport/Login');
+              }, 1000);
+            }
           });
         }
-      },
-      onSubmit() {
-        const _this = this
-        this.$refs.ruleForm.validate((valid) => {
-          if (valid) {
-            _this.$http.post('v1/anchor/register',_this.form_params).then((resData) => {
-              if (resData.code === 0) {
-                _this.Ok('注册成功,即将跳转...')
-                setTimeout(()=>{
-                  _this.$router.push('/passport/Login')
-                },1000)
-              }
+      });
+    },
+    handleSubmit() {
+      let flag = false;
+      const that = this;
+      this.form.validateFields(['username', 'password'], { force: true }, (err, values) => {
+        if (!err) {
+          flag = true;
+          that.formLogin.username = values.username;
+          that.formLogin.password = values.password;
+        }
+      });
+
+      if (!flag) return;
+      http.post(Server.action.login, that.formLogin)
+        .then((resData) => {
+          if (resData.code === 0) {
+            setAccessToken(resData.result.access_token);
+            setUserInfo(JSON.stringify(resData.result));
+            this.$router.push({
+              path: '/dashboard/main',
             });
           }
         });
-      },
-      handleSubmit() {
-        let flag = false;
-        const that = this;
-        this.form.validateFields(['username', 'password'], { force: true }, (err, values) => {
-          if (!err) {
-            flag = true;
-            that.formLogin.username = values.username;
-            that.formLogin.password = values.password;
-          }
-        });
-
-        if (!flag) return;
-        http.post(Server.action.login, that.formLogin)
-          .then((resData) => {
-            if (resData.code === 0) {
-              setAccessToken(resData.result.access_token);
-              setUserInfo(JSON.stringify(resData.result));
-              this.$router.push({
-                path: '/dashboard/main',
-              });
-            }
-          });
-      },
-      handleChange(e) {
-        this.checkNick = e.target.checked;
-        this.$nextTick(() => {
-          this.form.validateFields(['nickname'], { force: true });
-        });
-      },
     },
-  };
+    handleChange(e) {
+      this.checkNick = e.target.checked;
+      this.$nextTick(() => {
+        this.form.validateFields(['nickname'], { force: true });
+      });
+    },
+  },
+};
 </script>
 <style lang="stylus" scoped>
   .user-layout-login

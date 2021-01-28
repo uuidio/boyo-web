@@ -24,7 +24,7 @@
              <a @click="editPassword(item)">修改密码</a>
            </div>
         </div>
-        
+
       </a-table>
       <div class="pageBox">
         <a-pagination
@@ -114,8 +114,8 @@ export default {
     //     obj:this.items
     //   })
     //     .then((res) => {
-    //       // console.log('平台账号列表',res);
-    //         if (res.data.code === 0) { 
+    //       // console.log('品牌账号列表',res);
+    //         if (res.data.code === 0) {
     //       this.listField=res.data.result.field;
     //       this.listField[2].scopedSlots= { customRender: 'status' }
     //        this.listField.push({
@@ -149,7 +149,7 @@ export default {
       // });
        fetch.post(Server.action.adminuserEdit,this.formItem)
         .then((resData) => {
-             if (resData.data.code === 0) { 
+             if (resData.data.code === 0) {
             helper.showSuccess(resData.data.message);
           }else{
             helper.showError(resData.data.message);

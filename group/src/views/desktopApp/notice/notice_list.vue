@@ -10,8 +10,11 @@
     <div>
       <a-table rowKey="created_at" :pagination="false" :columns="columns" :data-source="table_list">
         <span slot="action" slot-scope="text,record">
-          <a-button type="primary" size="small" icon="edit" @click="open_aModel('编辑',record)">编辑</a-button>
-          <a-button type="danger" size="small" icon="delete" @click="open_delete({url:'v1/live/notice/delete',data:{id:record.id}})" style="margin-left:10px;">删除</a-button>
+          <a-button type="primary" size="small" icon="edit"
+                    @click="open_aModel('编辑',record)">编辑</a-button>
+          <a-button type="danger" size="small" icon="delete"
+                    @click="open_delete({url:'v1/live/notice/delete',data:{id:record.id}})"
+                    style="margin-left:10px;">删除</a-button>
         </span>
       </a-table>
       <div class="pageBox" v-if="table_list.length !== 0">
@@ -26,32 +29,40 @@
     </div>
     <a-modal :title="aModel_title" v-model="aModel" @ok="onSubmit()" width="1300px">
       <a-form-model ref="ruleForm" :model="form_params" :rules="rules">
-        <a-form-model-item label="公告标题:" :label-col="{ md: 3,xs:24 }" :wrapper-col="{ md: 6,xs:24}" prop="title">
+        <a-form-model-item label="公告标题:" :label-col="{ md: 3,xs:24 }" :wrapper-col="{ md: 6,xs:24}"
+                           prop="title">
           <a-input v-model="form_params.title" placeholder="请输入公告标题"></a-input>
         </a-form-model-item>
-        <a-form-model-item label="公告内容:" :label-col="{ md: 3,xs:24 }" :wrapper-col="{ md: 6,xs:24}" prop="content">
-          <a-textarea v-model="form_params.notice" placeholder="请输入文章内容" :rows="4" />
+        <a-form-model-item label="公告内容:" :label-col="{ md: 3,xs:24 }" :wrapper-col="{ md: 6,xs:24}"
+                           prop="content">
+          <a-textarea v-model="form_params.notice" placeholder="请输入文章内容" :rows="4"/>
         </a-form-model-item>
         <a-form-model-item label="公告图片:" :label-col="{ md: 3,xs:24 }" :wrapper-col="{ md: 6,xs:24}">
-          <el-upload @handleAvatarSuccess="handleAvatarSuccess" :option="option"></el-upload>
-          <div><a-icon type="info-circle" /> <span> 请上传小于1m，宽度不大于700px图片</span></div>
+          <el-upload @handleAvatarSuccess="handleAvatarSuccess" :option="option"
+                     :form_params="form_params"></el-upload>
+          <div>
+            <a-icon type="info-circle"/>
+            <span> 请上传小于1m，宽度不大于700px图片</span></div>
         </a-form-model-item>
         <div v-if="form_params.img">
-        <a-form-model-item label="图片位置:" :label-col="{ md: 3,xs:24 }" :wrapper-col="{ md: 6,xs:24}" prop="location" >
-          <a-select v-model="form_params.location" placeholder="请选择">
-<!--            <a-select-option :value="0">顶部左侧</a-select-option>-->
-<!--            <a-select-option :value="1">顶部居中</a-select-option>-->
-<!--            <a-select-option :value="2">顶部右侧</a-select-option>-->
-<!--            <a-select-option :value="3">底部左侧</a-select-option>-->
-            <a-select-option :value="4">底部居中</a-select-option>
-<!--            <a-select-option :value="5">底部右侧</a-select-option>-->
-          </a-select>
-        </a-form-model-item>
-        <a-form-model-item label="图片宽比例:" :label-col="{ md: 3,xs:24 }" :wrapper-col="{ md: 6,xs:24}" prop="wide_ratio">
-          <a-input v-model.number="form_params.wide_ratio" placeholder="请输入0~100整数"></a-input>
-          <span style="position: absolute;right: 11px;top:-10px;">%</span>
-          <span style="position: absolute;right: -169px;top:-10px;"><a-icon type="info-circle" /> <span> 设置为0则默认原大小</span></span>
-        </a-form-model-item>
+          <a-form-model-item label="图片位置:" :label-col="{ md: 3,xs:24 }"
+                             :wrapper-col="{ md: 6,xs:24}" prop="location">
+            <a-select v-model="form_params.location" placeholder="请选择">
+              <!--            <a-select-option :value="0">顶部左侧</a-select-option>-->
+              <!--            <a-select-option :value="1">顶部居中</a-select-option>-->
+              <!--            <a-select-option :value="2">顶部右侧</a-select-option>-->
+              <!--            <a-select-option :value="3">底部左侧</a-select-option>-->
+              <a-select-option value="4">底部居中</a-select-option>
+              <!--            <a-select-option :value="5">底部右侧</a-select-option>-->
+            </a-select>
+          </a-form-model-item>
+          <a-form-model-item label="图片宽比例:" :label-col="{ md: 3,xs:24 }"
+                             :wrapper-col="{ md: 6,xs:24}" prop="wide_ratio">
+            <a-input v-model.number="form_params.wide_ratio" placeholder="请输入0~100整数"></a-input>
+            <span style="position: absolute;right: 11px;top:-10px;">%</span>
+            <span style="position: absolute;right: -169px;top:-10px;"><a-icon
+              type="info-circle"/> <span> 设置为0则默认原大小</span></span>
+          </a-form-model-item>
         </div>
       </a-form-model>
     </a-modal>
@@ -69,17 +80,15 @@ export default {
   components: {
     elUpload,
   },
-  computed: {
-
-  },
+  computed: {},
   data() {
     return {
       option: {
         size: 1,
-        fn(img,valid) {
+        fn(img, valid) {
           valid = img.width <= 600;
-            console.log(img.width);
-            console.log(valid);
+          console.log(img.width);
+          console.log(valid);
         },
         msg1: '上传的图片最大为600x',
       },
@@ -163,23 +172,33 @@ export default {
       const _this = this;
       this.aModel = true;
       if (type === '新增') {
-        this.form_params.title = '';
-        this.form_params.notice = '';
+        this.each(this.form_params, (key1, val1) => {
+          this.form_params[key1] = ''
+        });
         this.aModel_title = '添加公告';
       }
       if (type === '编辑') {
-        this.form_params.title = row.title;
-        this.form_params.notice = row.notice;
-        this.form_params.id = row.id;
+        this.each(row, (key1, val1) => {
+          if(this.form_params.hasOwnProperty(key1)){
+            if(key1=='wide_ratio'){
+              val1 = val1*1
+            }
+            this.form_params[key1] = val1;
+          }
+        });
+        // this.form_params.title = row.title;
+        // this.form_params.notice = row.notice;
+        // this.form_params.id = row.id;
         this.aModel_title = '编辑公告';
-        console.log(this.aModel_title);
       }
     },
     // 获取表格列表
     get_table_list(page) {
       const _this = this;
       _this.spinning = true;
-      if (page) { _this.table_param.page = page; }
+      if (page) {
+        _this.table_param.page = page;
+      }
       _this.$http.get('v1/live/notice/list', _this.table_param).then((resData) => {
         _this.spinning = false;
         if (resData.code === 0) {
@@ -223,11 +242,12 @@ export default {
 </script>
 
 <style scoped>
-.list-nav {
-  display: flex;
-  justify-content: space-between;
-}
-.list-nav button {
-  margin-right: 20px;
-}
+  .list-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .list-nav button {
+    margin-right: 20px;
+  }
 </style>
