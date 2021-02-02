@@ -73,7 +73,11 @@ export default {
         }
       }
     };
-
-
+    Vue.prototype.cut_date = function (date,num) {
+      return date.slice(0, num);
+    };
+    Vue.prototype.copy_obj = function (obj) {
+      return JSON.parse(JSON.stringify(obj));
+    };
   },
 };

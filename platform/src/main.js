@@ -26,17 +26,22 @@ import echarts from 'echarts';
 //图片预览放大缩小插件
 import Viewer from 'v-viewer';
 import 'viewerjs/dist/viewer.css';
-
+import $http from  './api/http'
+import $fetch from  './api/fetch'
+import global from "../../group/src/utils/global";
 Vue.prototype.$echarts = echarts; // 将echarts存到Vue原型中
 Vue.config.productionTip = false;
 
 Vue.use(Storage, config.storageOptions);
 Vue.use(Antd);
+Vue.use(global);
 Vue.use(router);
 Vue.use(VCharts)
 const IconFont = Icon.createFromIconfontCN({
   scriptUrl: '//at.alicdn.com/t/font_909562_vvzcgns0o0g.js',
 });
+Vue.prototype.$http = $http
+Vue.prototype.$fetch = $fetch
 Vue.component('em-icon', IconFont);
 Vue.prototype.SltFilterOption = function (input, option) {
   return (

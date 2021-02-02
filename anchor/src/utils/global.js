@@ -16,5 +16,8 @@ export default {
     Vue.prototype.c_router = function (path, query) {
       this.$router.push({ path, query });
     };
+    Vue.prototype.cut_date = function (date) {
+      return date.slice(0, 6);
+    };
   },
 };

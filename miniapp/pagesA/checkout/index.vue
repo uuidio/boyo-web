@@ -956,6 +956,7 @@ export default {
 			});
 		},
 		submit() {
+			console.log(77777)
 			if (this.isSubmit) {
 				setTimeout(() => {
 					this.isSubmit = false;
@@ -987,6 +988,7 @@ export default {
 				});
 				return;
 			}
+			console.log(77777)
 			// let data = {
 			// 	pick_type: this.pick_type
 			// };
@@ -1033,6 +1035,7 @@ export default {
 			// 	data.points_fee = this.point.info.points_fee;
 			// }
 			// this.payFlag = false
+			console.log(this.currentPay)
 			if(this.isIntegral && this.realPrice == 0){
 				this.handleConfirmPay()
 			} else {
@@ -1045,7 +1048,7 @@ export default {
 					this.showPayDetail = true
 				}
 			}
-
+			console.log(77777)
 			// this.$http({
 			// 	aurl: 'createOrder',
 			// 	data: data,

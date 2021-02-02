@@ -356,7 +356,7 @@ import { toPayment, confirmOrder } from './orderFun';
 import tool from '../../../static/base/toolFun.js';
 // import qrCode from '../../static/qrcode/weapp-qrcode';
 const columns = ['不想买了', '重复下单', '订单有误', '其它原因'];
-import uniCountdown from '@dcloudio/uni-ui/lib/uni-count-down/uni-count-down.vue';
+import uniCountdown from '@dcloudio/uni-ui/lib/uni-countdown/uni-countdown.vue';
 import uniPopup from '@dcloudio/uni-ui/lib/uni-popup/uni-popup.vue';
 
 export default {

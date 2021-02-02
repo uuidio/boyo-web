@@ -6,14 +6,6 @@
           <a-form-model ref="ruleForm" :model="table_param">
             <a-row>
               <a-col :md="8" :xs="24">
-                <a-form-model-item label="品牌选择:" :label-col="{ md: 6,xs:8 }" :wrapper-col="{ md: 16,xs:14}">
-                  <a-select @change="platform_change" v-model="table_param.platform_id" placeholder="请选择">
-                    <a-select-option value="">全部</a-select-option>
-                    <a-select-option v-for="item in all_platform" :value="item.gm_id">{{item.platform_name}}</a-select-option>
-                  </a-select>
-                </a-form-model-item>
-              </a-col>
-              <a-col :md="8" :xs="24">
                 <a-form-model-item label="门店选择:" :label-col="{ md: 6,xs:8 }" :wrapper-col="{ md: 16,xs:14}">
                   <a-select v-model="table_param.shop_id" placeholder="请选择">
                     <a-select-option value="">全部</a-select-option>
@@ -40,7 +32,7 @@
                   </a-select>
                 </a-form-model-item>
               </a-col>
-              <a-col :md="8" :xs="24">
+              <a-col :md="16" :xs="24">
                 <div style="float:right;margin-top: 4px;">
                   <a-button type="primary" @click="get_table_list(1)"><a-icon type="search" />搜索</a-button>
                   <a-button @click="reload()"><a-icon type="undo" />重置</a-button>
@@ -60,7 +52,7 @@
           {{cut_date(record.account_end_time,10)}}
         </span>
         <span slot="action" slot-scope="text,record">
-          <a-button type="primary" size="small" icon="edit" @click="open_aModel('编辑',record)">设置品牌门店</a-button>
+          <a-button type="primary" size="small" icon="edit" @click="open_aModel('编辑',record)">设置门店</a-button>
         </span>
       </a-table>
       <div class="pageBox" v-if="table_list.length !== 0">
@@ -73,17 +65,11 @@
         />
       </div>
     </div>
-    <a-modal title="设定品牌门店" v-model="aModel" @ok="onSubmit()" width="560px">
+    <a-modal title="设定门店" v-model="aModel" @ok="onSubmit()" width="560px">
       <a-form-model ref="ruleForm" :model="form_params" :rules="rules">
-        <a-form-model-item label="品牌选择:" :label-col="{ md: 5,xs:24 }" :wrapper-col="{ md: 19,xs:24}" prop="platform_id">
-          <a-select v-model="form_params.platform_id" @change="platform_change2"  placeholder="请选择">
-            <a-select-option v-for="item in all_platform" :value="item.gm_id">{{item.platform_name}}</a-select-option>
-          </a-select>
-        </a-form-model-item>
-        <a-form-model-item label="门店选择:" :label-col="{ md: 5,xs:24 }" :wrapper-col="{ md: 19,xs:24}">
+        <a-form-model-item label="门店选择:" :label-col="{ md: 5,xs:24 }" :wrapper-col="{ md: 19,xs:24}" prop="shop_id">
           <a-select v-model="form_params.shop_id" placeholder="请选择">
-            <a-select-option value="">不设置</a-select-option>
-            <a-select-option v-for="item in all_shops2" :value="item.id">{{item.shop_name}}</a-select-option>
+            <a-select-option v-for="item in all_shops" :value="item.id">{{item.shop_name}}</a-select-option>
           </a-select>
         </a-form-model-item>
       </a-form-model>
@@ -92,14 +78,9 @@
 </template>
 <script>
 import { mapState, mapActions } from 'vuex';
-import UploadImage from '@C/upload/UploadImage';
-import Ueditor from '@C/ueditor/notice_ueditor';
-
 export default {
   inject: ['reload'],
   components: {
-    UploadImage,
-    Ueditor,
   },
   computed: {
 
@@ -152,7 +133,6 @@ export default {
       table_param: {
         page: 1,
         per_page: 10,
-        platform_id: '',
         shop_id: '',
         mobile: '',
         username: '',
@@ -165,51 +145,31 @@ export default {
       tag_id: '',
       form_params: {
         id: '',
-        platform_id: undefined,
-        shop_id: '',
+        shop_id: undefined,
       },
       rules: {
-        platform_id: [
-          { required: true, message: '必填', trigger: 'change' },
+        shop_id: [
+          { required: true, message: '必填', trigger: 'blur' },
         ],
       },
       // 列表相关的代码++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
       all_platform: [],
-      all_platform2: [],
       all_shops: [],
-      all_shops2: [],
     };
   },
   methods: {
-    platform_change(val) {
-      if(val){
-        this.all_shops2 = this.all_platform2.find(defItem => val === defItem.gm_id).shops
-      }else{
-        this.all_shops2 = []
-      }
-      this.table_param.shop_id = ''
-    },
-    platform_change2(val) {
-      if(val){
-        this.all_shops2 = this.all_platform2.find(defItem => val === defItem.gm_id).shops
-      }else{
-        this.all_shops2 = []
-      }
-      this.form_params.shop_id = ''
-    },
     // 打开弹框
     open_aModel(type, row) {
       const _this = this;
       this.aModel = true;
       this.form_params.id = row.id
     },
-    get_all_platform() {
+    get_all_shop() {
       const _this = this;
       _this.$http.get('v1/live/platforms/shops', {}).then((resData) => {
         _this.spinning = false;
         if (resData.code === 0) {
-          _this.all_platform = this.copy_obj(resData.result.lists)
-          _this.all_platform2 = this.copy_obj(resData.result.lists)
+          _this.all_shops = this.copy_obj(resData.result.lists)
         }
       });
     },
@@ -230,7 +190,7 @@ export default {
       const _this = this;
       this.$refs.ruleForm.validate((valid) => {
         if (valid) {
-          _this.$http.post('v1/live/platform/binding', _this.form_params).then((resData) => {
+          _this.$http.post('v1/live/shop/binding', _this.form_params).then((resData) => {
             if (resData.code === 0) {
               _this.aModel = false;
               _this.ok('操作成功');
@@ -244,7 +204,7 @@ export default {
   mounted() {
   },
   created() {
-    this.get_all_platform()
+    this.get_all_shop();
     this.get_table_list(1);
   },
 };

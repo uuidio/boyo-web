@@ -74,7 +74,7 @@
 
 <script>
 import tool from '../../static/base/toolFun.js';
-import uniCountdown from '@dcloudio/uni-ui/lib/uni-count-down/uni-count-down.vue';
+import uniCountdown from '@dcloudio/uni-ui/lib/uni-countdown/uni-countdown.vue';
 
 export default {
   onShareAppMessage: function(res) {

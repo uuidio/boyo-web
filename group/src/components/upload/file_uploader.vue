@@ -8,7 +8,7 @@
                 :show-file-list="false"
                 :on-success="handleAvatarSuccess"
                 :before-upload="beforeAvatarUpload">
-            <a-button type="primary" v-if="!form_params.url">上传apk文件</a-button>
+            <a-button :loading="b_loading" type="primary" v-if="!form_params.url">{{button_name}}</a-button>
         </Upload>
     </div>
 </template>
@@ -28,6 +28,8 @@ export default {
   },
   data() {
     return {
+      button_name: '上传apk文件',
+      b_loading: false,
       uploadImageUrl: '',
       headers: {
         Accept: 'application/json',
@@ -48,9 +50,13 @@ export default {
         console.log(res.result);
         this.$emit('handleAvatarSuccess', res.result, this.get_suffix(file.name,'pre'));
       }
+      this.button_name = '上传apk文件'
+      this.b_loading = false
     },
     // 上传之前判断
     beforeAvatarUpload(file) {
+      this.button_name = '上传中'
+      this.b_loading = true
       const _this = this;
       console.log(this.get_suffix(file.name, 'last'));
       const isJPG = (this.get_suffix(file.name,'last') === '.apk');

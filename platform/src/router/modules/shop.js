@@ -58,5 +58,14 @@ export default {
         hideInMenu: true,
       },
     },
+    {
+      path: '/shop/anchor/list',
+      name: 'anchor_list',
+      component: () => import('@/views/shop/anchor/list'),
+      meta: {
+        auth: true,
+        title: '主播账号列表',
+      },
+    },
   ],
 };

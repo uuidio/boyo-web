@@ -33,7 +33,7 @@
 </template>
 
 <script>
-  import uniCountdown from '@dcloudio/uni-ui/lib/uni-count-down/uni-count-down.vue';
+  import uniCountdown from '@dcloudio/uni-ui/lib/uni-countdown/uni-countdown.vue';
   import tool from '../../static/base/toolFun.js';
   export default {
     props: {

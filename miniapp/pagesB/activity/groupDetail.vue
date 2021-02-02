@@ -113,7 +113,7 @@
 
 <script>
 import tool from '../../static/base/toolFun.js';
-import uniCountdown from '@dcloudio/uni-ui/lib/uni-count-down/uni-count-down.vue';
+import uniCountdown from '@dcloudio/uni-ui/lib/uni-countdown/uni-countdown.vue';
 import tuiBottomPopup from '../../components/bottom-popup/bottom-popup';
 import tuiNumberbox from '../../components/numberbox/numberbox';
 export default {

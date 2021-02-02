@@ -171,7 +171,7 @@
 </template>
 
 <script>
-  import uniCountdown from '@dcloudio/uni-ui/lib/uni-count-down/uni-count-down.vue';
+  import uniCountdown from '@dcloudio/uni-ui/lib/uni-countdown/uni-countdown.vue';
 
   export default {
     components: {

@@ -105,7 +105,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var nullData = function nullData() {return __webpack_require__.e(/*! import() | components/lists/nullData */ "components/lists/nullData").then(__webpack_require__.bind(null, /*! ../../components/lists/nullData.vue */ 441));};var uniCountdown = function uniCountdown() {return __webpack_require__.e(/*! import() | node-modules/@dcloudio/uni-ui/lib/uni-count-down/uni-count-down */ "node-modules/@dcloudio/uni-ui/lib/uni-count-down/uni-count-down").then(__webpack_require__.bind(null, /*! @dcloudio/uni-ui/lib/uni-count-down/uni-count-down.vue */ 476));};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var nullData = function nullData() {return __webpack_require__.e(/*! import() | components/lists/nullData */ "components/lists/nullData").then(__webpack_require__.bind(null, /*! ../../components/lists/nullData.vue */ 441));};var uniCountdown = function uniCountdown() {return __webpack_require__.e(/*! import() | node-modules/@dcloudio/uni-ui/lib/uni-count-down/uni-count-down */ "node-modules/@dcloudio/uni-ui/lib/uni-count-down/uni-count-down").then(__webpack_require__.bind(null, /*! @dcloudio/uni-ui/lib/uni-countdown/uni-countdown.vue */ 476));};var _default =
 
 
 

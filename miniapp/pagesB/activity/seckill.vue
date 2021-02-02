@@ -85,7 +85,7 @@
 
 <script>
 import nullData from '../../components/lists/nullData.vue';
-import uniCountdown from '@dcloudio/uni-ui/lib/uni-count-down/uni-count-down.vue';
+import uniCountdown from '@dcloudio/uni-ui/lib/uni-countdown/uni-countdown.vue';
 import mta from '../../mixins/mta';
 export default {
 	mixins: [mta],

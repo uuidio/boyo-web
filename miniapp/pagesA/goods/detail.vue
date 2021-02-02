@@ -447,7 +447,7 @@ import global from '../../mixins/global.js';
 import tuiBottomPopup from '../../components/bottom-popup/bottom-popup';
 import tuiNumberbox from '../../components/numberbox/numberbox';
 import toHome from '../../components/header/ToHome';
-import uniCountdown from '@dcloudio/uni-ui/lib/uni-count-down/uni-count-down.vue';
+import uniCountdown from '@dcloudio/uni-ui/lib/uni-countdown/uni-countdown.vue';
 import mta from '../../mixins/mta';
 import {
   showTuisong,
