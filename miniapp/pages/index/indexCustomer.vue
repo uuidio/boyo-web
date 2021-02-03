@@ -5,7 +5,7 @@
 		<view class="index-box">
 			<view class="mp-search-box" :style="{ boxSizing: 'border-box', height: myHeight + 'px', paddingTop: myTop + 'px'}">
 				<view class="index-head" :style="{ height: myHeight - myTop - 6 + 'px', lineHeight: myHeight - myTop - 6 + 'px' }">
-					<text class="my-text mt-md">极汇Go</text>
+					<text class="my-text mt-md">播丫Go</text>
 				</view>
 			</view>
       <view v-if="shop_lists.length > 0" class="search_box" :style="{ position: 'fixed',zIndex: 999999, top: myHeight + 'px'}">

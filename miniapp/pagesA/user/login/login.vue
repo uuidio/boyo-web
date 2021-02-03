@@ -9,7 +9,7 @@
        <button class="getInfoBtn phoneBtn  text-md" type="primary" lang="zh_CN" open-type="getPhoneNumber" @getphonenumber="bindPhoneNumber">手机号一键登录</button>
      </view>
      <view class="text-center col-666 mt-lg" @tap="toLink('/pagesA/user/login/agreement')">
-       已阅读并同意 <text class="agreement">《极汇Go用户注册协议》</text>
+       已阅读并同意 <text class="agreement">《播丫Go用户注册协议》</text>
      </view>
    </view>
   </view>

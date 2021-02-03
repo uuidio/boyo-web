@@ -234,7 +234,7 @@
             },
             {
               type: 'text',
-              text:'极汇Go小程序',
+              text:'播丫Go小程序',
               css: {
                 bottom: '56rpx',
                 left: '102rpx',

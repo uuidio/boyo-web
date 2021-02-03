@@ -56,7 +56,7 @@
 }
 .itmMain{
 	/* width: 250upx; */
-	width: 150upx;
+	width: 250upx;
   position: relative;
 	justify-content: center;
 	align-items: center;
@@ -114,7 +114,7 @@
 <template>
 	<view class="tabbarMain" :class="[flagTypeInfo? 'tabbarMainIphone':'']">
 		<!-- 中间突起按钮 -->
-		<image src="/static/images/tabbar/get_app.png" :fade-show='false' class="btnfixMin" :class="[flagTypeInfo? 'btnfixMinIphone':'']" mode="" @click.stop="switchTabFunc(2, '')"></image>
+		<!-- <image src="/static/images/tabbar/get_app.png" :fade-show='false' class="btnfixMin" :class="[flagTypeInfo? 'btnfixMinIphone':'']" mode="" @click.stop="switchTabFunc(2, '')"></image> -->
 		<view class="tabBtnMina"  :class="[flagTypeInfo? 'tabBtnMinaIphone':'']" mode="">
 			<view class="itmMain" @click.stop="switchTabFunc(0, '/pages/index/indexCustomer')">
 				<image class="imgse" :fade-show='false' v-if="active!=0" src="/static/images/tabbar/homePage_false.png"></image>
@@ -126,7 +126,7 @@
 				<image class="imgse" :fade-show='false' v-if="active===1" src="/static/images/tabbar/class_true.png"></image>
 				<text class="txtBtn" :class="{'txtBtnSel' :active==1}">分类</text>
 			</view>
-			<view class="itmMain"></view>
+<!-- 			<view class="itmMain"></view> -->
 			<view class="itmMain" @click.stop="switchTabFunc(3, '/pages/cart/cart')">
         <view class="cart-num" v-if="cartNum!==0">{{ cartNum }}</view>
 				<image class="imgse" :fade-show='false' v-if="active!=3" src="/static/images/tabbar/cart_false.png"></image>

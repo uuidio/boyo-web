@@ -16,4 +16,4 @@ export const setDocumentTitle = function (title) {
   }
 };
 
-export const domTitle = '极汇品牌';
+export const domTitle = '播丫品牌';

@@ -183,15 +183,15 @@ export default {
   methods: {
     platform_change(val) {
       if(val){
-        this.all_shops2 = this.all_platform2.find(defItem => val === defItem.gm_id).shops
+        this.all_shops = this.all_platform.find(defItem => val === defItem.gm_id).shops
       }else{
-        this.all_shops2 = []
+        this.all_shops = []
       }
       this.table_param.shop_id = ''
     },
     platform_change2(val) {
       if(val){
-        this.all_shops2 = this.all_platform2.find(defItem => val === defItem.gm_id).shops
+        this.all_shops2 = this.all_platform.find(defItem => val === defItem.gm_id).shops
       }else{
         this.all_shops2 = []
       }
@@ -209,7 +209,6 @@ export default {
         _this.spinning = false;
         if (resData.code === 0) {
           _this.all_platform = this.copy_obj(resData.result.lists)
-          _this.all_platform2 = this.copy_obj(resData.result.lists)
         }
       });
     },

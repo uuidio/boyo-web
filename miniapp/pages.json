@@ -4,7 +4,7 @@
       "path": "pages/index/indexCustomer",
       "style": {
         // #ifdef MP
-        "navigationBarTitleText": "极汇Go",
+        "navigationBarTitleText": "播丫Go",
         "navigationStyle": "custom",
         // #endif
 
@@ -47,7 +47,7 @@
     {
       "path": "pages/index/index",
       "style": {
-        "navigationBarTitleText": "极汇Go",
+        "navigationBarTitleText": "播丫Go",
         "navigationStyle": "custom",
         "usingComponents": {
           "van-action-sheet": "/wxcomponents/vant/action-sheet/index"
@@ -340,7 +340,7 @@
 	  {
 	    "path": "user/login/agreement",
 	    "style": {
-	      "navigationBarTitleText": "极汇Go用户注册协议",
+	      "navigationBarTitleText": "播丫Go用户注册协议",
 	      "usingComponents": {}
 	    }
 	  },
@@ -1018,7 +1018,7 @@
   },
   "globalStyle": {
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "极汇Go",
+    "navigationBarTitleText": "播丫Go",
     "navigationBarBackgroundColor": "#ffffff",
     "backgroundColor": "#F8F8F8"
   },

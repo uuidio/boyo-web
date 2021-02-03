@@ -19,7 +19,7 @@
       <button class="loginBtn" @tap="submitLogin">绑定</button>
     </view>
     <view class="text-center text-sm col-ccc mt-l" @tap="toLink('/pagesA/user/wallet/cardAgreement')">
-      绑定即已阅读并同意 <text class="agreement">《极汇Go实体卡使用协议》</text>
+      绑定即已阅读并同意 <text class="agreement">《播丫Go实体卡使用协议》</text>
     </view>
   </view>
 </template>

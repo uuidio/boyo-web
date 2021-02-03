@@ -51,7 +51,7 @@ export default {
   data() {
     return {
       name: '管理员',
-      groupname: '极汇',
+      groupname: '播丫',
     };
   },
   methods: {

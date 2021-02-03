@@ -1,5 +1,5 @@
 const config = {
-	api_base_url: 'https://api-dev.boyo.tv/shop/', //极汇GO测试
+	api_base_url: 'https://api-dev.boyo.tv/shop/', //播丫GO测试
 	img_base_url: 'https://api-dev.boyo.tv/images/', //益购测试(图片地址)
 	//##益田集团正式 切记要区分清楚，避免影响到原本EGO
 	// api_base_url: 'https://ytxspt.ytholidayplaza.com/shop/',

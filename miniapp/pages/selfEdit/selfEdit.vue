@@ -332,7 +332,7 @@
         //           this.sltIndexItem.id = this.indexItems[0].gm_id
         //         }
         //       } else {
-        //         this.sltIndexItem.name = '极汇Go'
+        //         this.sltIndexItem.name = '播丫Go'
         //         this.sltIndexItem.id = ''
         //       }
         //

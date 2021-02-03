@@ -19,5 +19,5 @@ yarn-error.log*
 *.sln
 *.sw*
 
-# Project Config
-/src/config/env.js
+## Project Config
+#/src/config/env.js
