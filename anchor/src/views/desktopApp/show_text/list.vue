@@ -49,10 +49,11 @@ export default {
       rules: {
         classify_name: [
           { required: true, message: '请输入笔记本名称', trigger: 'blur' },
+          { max: 15, message: '最大长度为15', trigger: 'blur' },
         ],
       },
       columns: [
-        {title: '标题', dataIndex: 'classify_name', key: 'classify_name',},
+        {title: '题词本名称', dataIndex: 'classify_name', key: 'classify_name',},
         {title: '笔记数量', dataIndex: 'count', key: 'count',},
         {title: '创建时间', dataIndex: 'created_at', key: 'created_at',},
         {title: '操作', key: 'action', dataIndex: 'action', scopedSlots: { customRender: 'action' },fixed: 'right',}

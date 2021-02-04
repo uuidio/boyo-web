@@ -58,6 +58,7 @@ export default {
       rules: {
         name: [
           { required: true, message: '请输入分类名称', trigger: 'blur' },
+          { max: 10, message: '最大长度为10', trigger: 'blur' },
         ],
       },
       columns: [

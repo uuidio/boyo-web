@@ -1,17 +1,7 @@
 <template>
   <div class="footer">
-    <div class="links">
-      <a href="https://pro.ant.design/" target="_blank">Pro 首页</a>
-      <a href="https://github.com/ant-design/ant-design-pro" target="_blank">
-        <a-icon type="github"/>
-      </a>
-      <a href="https://ant.design/">Ant Design</a>
-      <a href="https://vuecomponent.github.io/ant-design-vue/docs/vue/introduce-cn/">Vue Antd</a>
-    </div>
     <div class="copyright">
-      Copyright
-      <a-icon type="copyright"/>
-      2018 <span>ShopEm技术组出品</span>
+      @2020-至今 © 版权所有 广州播丫科技有限公司
     </div>
   </div>
 </template>

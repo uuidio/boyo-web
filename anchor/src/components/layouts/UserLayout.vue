@@ -4,7 +4,7 @@
       <div class="top">
         <div class="header">
           <a href="/">
-            <img src="~@/assets/logo.svg" class="logo" alt="logo">
+            <img src="~@/assets/logo.svg" class="logo" alt="logo" style="margin-top:5px">
             <span class="title">播丫直播助手管理</span>
           </a>
         </div>
@@ -15,7 +15,7 @@
       <route-view></route-view>
       <div class="footer">
         <div class="copyright">
-          Copyright &copy; 2018 ShopEm技术组出品
+          @2020-至今 © 版权所有 广州播丫科技有限公司
         </div>
       </div>
     </div>

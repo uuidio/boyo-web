@@ -38,17 +38,17 @@
         <a-form-model-item label="笔记标题:" :label-col="{ md: 6, xs: 24 }" :wrapper-col="{ md: 18, xs: 24 }" prop="title">
           <a-input style="width: 100%" v-model="form_params.title" placeholder="请输入笔记标题"/>
         </a-form-model-item>
-        <a-form-model-item label="笔记关键词1:" :label-col="{ md: 6, xs: 24 }" :wrapper-col="{ md: 18, xs: 24 }" >
+        <a-form-model-item label="笔记关键词1:" :label-col="{ md: 6, xs: 24 }" :wrapper-col="{ md: 18, xs: 24 }" prop="antistop_one">
           <a-input style="width: 100%" v-model="form_params.antistop_one" placeholder="笔记关键词1"/>
         </a-form-model-item>
-        <a-form-model-item label="笔记关键词2:" :label-col="{ md: 6, xs: 24 }" :wrapper-col="{ md: 18, xs: 24 }">
+        <a-form-model-item label="笔记关键词2:" :label-col="{ md: 6, xs: 24 }" :wrapper-col="{ md: 18, xs: 24 }" prop="antistop_two">
           <a-input style="width: 100%" v-model="form_params.antistop_two" placeholder="笔记关键词2"/>
         </a-form-model-item>
-        <a-form-model-item label="笔记关键词3:" :label-col="{ md: 6, xs: 24 }" :wrapper-col="{ md: 18, xs: 24 }">
+        <a-form-model-item label="笔记关键词3:" :label-col="{ md: 6, xs: 24 }" :wrapper-col="{ md: 18, xs: 24 }" prop="antistop_three">
           <a-input style="width: 100%" v-model="form_params.antistop_three" placeholder="笔记关键词3"/>
         </a-form-model-item>
         <a-form-model-item label="内容:" :label-col="{ md: 6, xs: 24 }" :wrapper-col="{ md: 18, xs: 24 }">
-          <a-input type="textarea" style="width: 100%" v-model="form_params.content" placeholder="请输入文案内容"/>
+          <a-textarea :rows="10" type="textarea" style="width: 100%" v-model="form_params.content" placeholder="请输入文案内容"/>
         </a-form-model-item>
         <a-form-model-item label="排序:" :label-col="{ md: 6, xs: 24 }" :wrapper-col="{ md: 18, xs: 24 }" prop="sort">
           <a-input style="width: 100%" v-model="form_params.sort" placeholder="请输入已存在序号，并调换"/>
@@ -124,6 +124,20 @@ export default {
       rules: {
         title: [
           { required: true, message: '请输入笔记标题', trigger: 'blur' },
+          { max:10, message: '最大长度为10', trigger: 'blur' },
+        ],
+        antistop_one: [
+          { required: true, message: '请输入排序', trigger: 'blur' },
+          { pattern: /^[1-9]\d*$/, message: '请输入大于0正整数' },
+        ],
+        antistop_one: [
+          { max:6, message: '最大长度为6', trigger: 'blur' },
+        ],
+        antistop_two: [
+          { max:6, message: '最大长度为6', trigger: 'blur' },
+        ],
+        antistop_three: [
+          { max:6, message: '最大长度为6', trigger: 'blur' },
         ],
         sort: [
           { required: true, message: '请输入排序', trigger: 'blur' },
