@@ -35,7 +35,7 @@ export default {
       component: () => import('@/views/desktopApp/stickers/list'),
       meta: {
         auth: true,
-        title: '贴纸管理',
+        title: '素材管理',
       },
     },
   ],

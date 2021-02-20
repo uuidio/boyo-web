@@ -8,8 +8,8 @@ const fetch = axios.create(config);
 // http request 拦截器
 fetch.interceptors.request.use(
   (config) => {
-    if (Cookies.get('access_token')) {
-      config.headers.Authorization = `Bearer ${Cookies.get('access_token')}`;
+    if (Cookies.get('live_access_token')) {
+      config.headers.Authorization = `Bearer ${Cookies.get('live_access_token')}`;
     }
     if (config.data) {
       if (config.data.timeout) {
@@ -27,7 +27,7 @@ fetch.interceptors.response.use(
   (response) => {
     if (response.data.code === 401) {
       // token过期
-      Cookies.remove('access_token');
+      Cookies.remove('live_access_token');
       router.replace({
         path: '/passport/login',
         query: {

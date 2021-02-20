@@ -1,6 +1,8 @@
 const config = {
-	api_base_url: 'https://api-dev.boyo.tv/shop/', //播丫GO测试
-	img_base_url: 'https://api-dev.boyo.tv/images/', //益购测试(图片地址)
+	// api_base_url: 'https://api-dev.boyo.tv/shop/', //播丫GO测试
+	api_base_url: 'https://api.boyo.tv/shop/', //播丫GO正式
+	img_base_url: 'https://api.boyo.tv/images/', //益购测试(图片地址)
+	// img_base_url: 'https://api-dev.boyo.tv/images/', //益购测试(图片地址)
 	//##益田集团正式 切记要区分清楚，避免影响到原本EGO
 	// api_base_url: 'https://ytxspt.ytholidayplaza.com/shop/',
 	// img_base_url: 'https://ytxspt.ytholidayplaza.com/images/',
@@ -8,11 +10,13 @@ const config = {
 	// api_base_url: 'https://ego.ytholidayplaza.com/shop/',//益购正式
 	// img_base_url: 'https://ego.ytholidayplaza.com/images/',//益购正式
 
-	api_h5_url:'https://api-dev.boyo.tv/admin/platform/',//h5view测试
+	// api_h5_url:'https://api-dev.boyo.tv/admin/platform/',//h5view测试
+	api_h5_url:'https://api.boyo.tv/admin/platform/',//h5view正式
 
 	apiLinks: {
 		wechatminipay: {
-			url: 'https://api-dev.boyo.tv/payment/wechatminipay', //益购测试
+			// url: 'https://api-dev.boyo.tv/payment/wechatminipay', //益购测试
+			url: 'https://api.boyo.tv/payment/wechatminipay', //益购正式
 			// url: 'https://ego.ytholidayplaza.com/payment/wechatminipay',//益购正式
 			//##益田集团正式 切记要区分清楚，避免影响到原本EGO
 			// url: 'https://ytxspt.ytholidayplaza.com/payment/wechatminipay',

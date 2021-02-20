@@ -71,7 +71,7 @@
           <view class="mt-lg">
             <view class="fxBox1">
               <view class="fx1">
-                <view class="col-999 text-sm">邀请好友数（人）</view>
+                <view class="col-999 text-sm">邀请好友数1（人）</view>
                 <view class="fw700 text-18  mt-xs">{{detail.partner_bytime}}</view>
               </view>
               <view class="fx1">

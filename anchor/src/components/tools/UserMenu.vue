@@ -11,12 +11,12 @@
         <span>您好，{{name}}</span>
       </span>
       <a-menu slot="overlay" class="user-dropdown-menu-wrapper">
-        <a-menu-item key="0">
-          <router-link :to="{ name: 'setting' }">
-            <a-icon type="user"/>
-            <span>门店设置</span>
-          </router-link>
-        </a-menu-item>
+<!--        <a-menu-item key="0">-->
+<!--          <router-link :to="{ name: 'setting' }">-->
+<!--            <a-icon type="user"/>-->
+<!--            <span>门店设置</span>-->
+<!--          </router-link>-->
+<!--        </a-menu-item>-->
         <a-menu-item key="1">
             <a-icon type="setting"/>
             <span @click="register_logout()">修改密码</span>

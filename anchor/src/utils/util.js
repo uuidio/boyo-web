@@ -1,8 +1,8 @@
 import Cookies from 'js-cookie';
 import config from '@/config/common';
 
-export const ACCESS_TOKEN = 'access_token';
-export const USER_INFO = 'user_info';
+export const ACCESS_TOKEN = 'live_access_token';
+export const USER_INFO = 'live_user_info';
 
 /**
  * 设置Cookie
